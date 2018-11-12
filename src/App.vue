@@ -6,6 +6,7 @@
             <router-link to="/axios">axios</router-link> |
             <router-link to="/cookie">cookie</router-link> |
             <router-link to="/vuex">vuex</router-link> |
+            <router-link to="/component">组件</router-link> |
             <router-link :to="{name:'exampleParams',params:{test:'123'}}">路由params</router-link> |
             <router-link :to="{path:'/query',query:{test:'123'}}">路由query</router-link> |
             <router-link to="/reload">刷新当前页面</router-link>

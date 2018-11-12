@@ -14,6 +14,9 @@ export default [{
 	path: '/vuex',
 	component: () => import('@/views/example/vuex.vue')
 }, {
+	path: '/component',
+	component: () => import('@/views/example/component.vue')
+}, {
 	path: '/params/:test',
 	name: 'exampleParams', // 设置路由的name时，建议加上模块名，避免name和其他模块重名
 	component: () => import('@/views/example/params.vue')
