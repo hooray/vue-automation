@@ -13,3 +13,7 @@
 - node-sass
 - sass-loader
 - webpack-spritesmith
+
+## 例子
+
+拉取到本地运行后，会看到部分功能演示，同时项目目录里带有 `example` 的目录均为演示代码。
