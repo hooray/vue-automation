@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <div id="nav">
+            <router-link to="/">首页</router-link> |
+            <router-link to="/sprite">sprite精灵图</router-link> |
+            <router-link to="/axios">axios</router-link> |
+            <router-link to="/cookie">cookie</router-link> |
+            <router-link to="/vuex">vuex</router-link> |
+            <router-link :to="{name:'exampleParams',params:{test:'123'}}">路由params</router-link> |
+            <router-link :to="{path:'/query',query:{test:'123'}}">路由query</router-link> |
+            <router-link to="/reload">刷新当前页面</router-link>
+        </div>
+        <router-view v-if="isRouterAlive" />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    provide() {
+        return {
+            reload: this.reload
+        };
+    },
+    data() {
+        return {
+            isRouterAlive: true
+        };
+    },
+    methods: {
+        reload() {
+            this.isRouterAlive = false;
+            this.$nextTick(() => (this.isRouterAlive = true));
+        }
+    }
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
