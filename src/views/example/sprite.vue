@@ -22,7 +22,6 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
 @import '@/assets/sprites/_example.scss';
 @import '@/assets/styles/example.scss';

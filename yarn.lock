@@ -3006,9 +3006,9 @@ eslint-plugin-vue@^4.7.1:
     vue-eslint-parser "^2.0.3"
 
 eslint-plugin-vue@^5.0.0-0:
-  version "5.0.0-beta.3"
-  resolved "http://registry.npm.taobao.org/eslint-plugin-vue/download/eslint-plugin-vue-5.0.0-beta.3.tgz#f3fa9f109b76e20fc1e45a71ce7c6d567118924e"
-  integrity sha1-8/qfEJt24g/B5FpxznxtVnEYkk4=
+  version "5.0.0-beta.4"
+  resolved "http://registry.npm.taobao.org/eslint-plugin-vue/download/eslint-plugin-vue-5.0.0-beta.4.tgz#fdb576b9e723e27140646adab218001dd16a829f"
+  integrity sha1-/bV2uecj4nFAZGrashgAHdFqgp8=
   dependencies:
     vue-eslint-parser "^3.2.1"
 
