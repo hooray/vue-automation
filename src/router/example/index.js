@@ -11,6 +11,9 @@ export default [{
 	path: '/cookie',
 	component: () => import('@/views/example/cookie.vue')
 }, {
+	path: '/meta',
+	component: () => import('@/views/example/meta.vue')
+}, {
 	path: '/vuex',
 	component: () => import('@/views/example/vuex.vue')
 }, {

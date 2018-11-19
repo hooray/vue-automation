@@ -3,10 +3,12 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 import util from './util/index'
-import VueCookies from 'vue-cookies'
+import cookies from 'vue-cookies'
+import meta from 'vue-meta'
 
 Vue.use(util)
-Vue.use(VueCookies)
+Vue.use(cookies)
+Vue.use(meta)
 
 /**
  * 全局批量注册组件自定义

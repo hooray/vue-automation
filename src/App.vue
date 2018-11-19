@@ -5,6 +5,7 @@
             <router-link to="/sprite">sprite精灵图</router-link> |
             <router-link to="/axios">axios</router-link> |
             <router-link to="/cookie">cookie</router-link> |
+            <router-link to="/meta">meta</router-link> |
             <router-link to="/vuex">vuex</router-link> |
             <router-link to="/component">组件</router-link> |
             <router-link :to="{name:'exampleParams',params:{test:'123'}}">路由params</router-link> |
@@ -34,6 +35,11 @@ export default {
         reload() {
             this.isRouterAlive = false;
             this.$nextTick(() => (this.isRouterAlive = true));
+        }
+    },
+    metaInfo: {
+        titleTemplate: title => {
+            return title ? `${title} - Vue-automation` : 'Vue-automation';
         }
     }
 };

@@ -10,6 +10,7 @@
 - vuex
 - axios
 - vue-cookies
+- vue-meta
 - node-sass
 - sass-loader
 - webpack-spritesmith
