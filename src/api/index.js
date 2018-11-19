@@ -13,14 +13,14 @@ api.interceptors.request.use(
 		if (request.method == 'post') {
 			if (request.data instanceof FormData) {
 				// 如果是 FormData 类型（上传图片）
-				request.data.append('token', $cookies.get('token'));
+				request.data.append('token', this.$cookies.get('token'));
 			} else {
 				// 带上 token
 				if (request.data == undefined) {
 					request.data = {}
 				}
-				if ($cookies.isKey('token') && request.data.token == undefined) {
-					request.data.token = $cookies.get('token');
+				if (this.$cookies.isKey('token') && request.data.token == undefined) {
+					request.data.token = this.$cookies.get('token');
 				}
 				request.data = qs.stringify(request.data);
 			}
@@ -29,8 +29,8 @@ api.interceptors.request.use(
 			if (request.params == undefined) {
 				request.params = {}
 			}
-			if ($cookies.isKey('token') && request.params.token == undefined) {
-				request.params.token = $cookies.get('token');
+			if (this.$cookies.isKey('token') && request.params.token == undefined) {
+				request.params.token = this.$cookies.get('token');
 			}
 		}
 		return request;

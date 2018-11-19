@@ -1,5 +1,5 @@
 export default {
-	install(Vue, options) {
+	install(Vue) {
 		// 校验是否登录
 		Vue.prototype.$checkLogin = function () {
 			return this.$cookies.isKey('token');
