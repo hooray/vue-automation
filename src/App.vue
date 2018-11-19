@@ -9,7 +9,10 @@
             <router-link to="/component">组件</router-link> |
             <router-link :to="{name:'exampleParams',params:{test:'123'}}">路由params</router-link> |
             <router-link :to="{path:'/query',query:{test:'123'}}">路由query</router-link> |
-            <router-link to="/reload">刷新当前页面</router-link>
+            <router-link to="/reload">刷新当前页面</router-link> |
+            <router-link to="/permission/router">router鉴权</router-link> |
+            <router-link to="/permission/js">js鉴权</router-link> |
+            <router-link to="/login">模拟登录页</router-link>
         </div>
         <router-view v-if="isRouterAlive" />
     </div>

@@ -2,7 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
+import util from './util/index'
 import VueCookies from 'vue-cookies'
+
+Vue.use(util)
+Vue.use(VueCookies)
 
 /**
  * 全局批量注册组件自定义
@@ -21,8 +25,6 @@ import VueCookies from 'vue-cookies'
 // })
 
 Vue.config.productionTip = false
-
-Vue.use(VueCookies)
 
 new Vue({
     router,

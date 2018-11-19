@@ -26,4 +26,16 @@ export default [{
 }, {
 	path: '/reload',
 	component: () => import('@/views/example/reload.vue')
+}, {
+	path: '/permission/router',
+	component: () => import('@/views/example/permission.router.vue'),
+	meta: {
+		requireLogin: true // 鉴权
+	}
+}, {
+	path: '/permission/js',
+	component: () => import('@/views/example/permission.js.vue')
+}, {
+	path: '/login',
+	component: () => import('@/views/example/login.vue')
 }]

@@ -16,15 +16,15 @@ export default {
     },
     methods: {
         setCookie() {
-            $cookies.set('a', 'abc');
-            this.cookie = $cookies.get('a');
+            this.$cookies.set('a', 'abc');
+            this.cookie = this.$cookies.get('a');
         },
         removeCookie() {
-            $cookies.remove('a', 'abc');
-            this.cookie = $cookies.get('a');
+            this.$cookies.remove('a', 'abc');
+            this.cookie = this.$cookies.get('a');
         },
         isSetCookie() {
-            alert($cookies.isKey('a'));
+            alert(this.$cookies.isKey('a'));
         }
     }
 };
