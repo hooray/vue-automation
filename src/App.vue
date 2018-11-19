@@ -39,7 +39,7 @@ export default {
     },
     metaInfo: {
         titleTemplate: title => {
-            return title ? `${title} - Vue-automation` : 'Vue-automation';
+            return title ? `${title} - ${process.env.VUE_APP_TITLE}` : process.env.VUE_APP_TITLE;
         }
     }
 };
