@@ -1,10 +1,10 @@
 <template>
-	<div>
-		<button type="button" @click="setCookie">设置cookie</button>
-		<button type="button" @click="removeCookie">删除cookie</button>
-		<button type="button" @click="isSetCookie">判断cookie是否设置</button>
-		<div>a的cookie值是：{{cookie}}</div>
-	</div>
+    <div>
+        <button type="button" @click="setCookie">设置cookie</button>
+        <button type="button" @click="removeCookie">删除cookie</button>
+        <button type="button" @click="isSetCookie">判断cookie是否设置</button>
+        <div>a的cookie值是：{{cookie}}</div>
+    </div>
 </template>
 
 <script>

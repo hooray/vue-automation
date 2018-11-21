@@ -1,8 +1,8 @@
 <template>
-	<div>
-		<button type="button" @click="getInfo">获取数据</button>
-		<img v-for="(item, index) in banner" :key="index" :src="item.image">
-	</div>
+    <div>
+        <button type="button" @click="getInfo">获取数据</button>
+        <img v-for="(item, index) in banner" :key="index" :src="item.image">
+    </div>
 </template>
 
 <script>
@@ -11,8 +11,8 @@ import { api } from '@/api';
 export default {
     data() {
         return {
-			banner: []
-		};
+            banner: []
+        };
     },
     methods: {
         getInfo() {
@@ -29,8 +29,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
-	display: block;
-	width: 300px;
+img {
+    display: block;
+    width: 300px;
 }
 </style>

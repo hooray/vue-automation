@@ -1,5 +1,5 @@
 <template>
-	<div>注意 title 的变化</div>
+    <div>注意 title 的变化</div>
 </template>
 
 <script>

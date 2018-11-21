@@ -1,8 +1,8 @@
 <template>
-	<div>
-		<p>如果未登录，会跳转到登录页，如果已登录，则弹出用户信息。</p>
-		<button @click="user">点我</button>
-	</div>
+    <div>
+        <p>如果未登录，会跳转到登录页，如果已登录，则弹出用户信息。</p>
+        <button @click="user">点我</button>
+    </div>
 </template>
 
 <script>

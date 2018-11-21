@@ -7,8 +7,8 @@
 <script>
 export default {
     inject: ['reload'],
-	beforeCreate(){
-		alert('触发beforeCreate')
-	}
+    beforeCreate() {
+        alert('触发beforeCreate');
+    }
 };
 </script>

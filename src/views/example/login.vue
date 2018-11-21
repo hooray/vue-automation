@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<button @click="login">模拟登录</button>
-	</div>
+    <div>
+        <button @click="login">模拟登录</button>
+    </div>
 </template>
 
 <script>

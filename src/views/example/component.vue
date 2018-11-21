@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<example-list :list="list"></example-list>
-	</div>
+    <div>
+        <example-list :list="list"></example-list>
+    </div>
 </template>
 
 <script>
