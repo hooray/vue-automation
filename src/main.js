@@ -2,12 +2,21 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
-import util from './util/index'
-import cookies from 'vue-cookies'
-import meta from 'vue-meta'
 
+import {
+    api,
+    axios
+} from './api'
+Vue.prototype.$api = api;
+Vue.prototype.$axios = axios;
+
+import util from './util/index'
 Vue.use(util)
+
+import cookies from 'vue-cookies'
 Vue.use(cookies)
+
+import meta from 'vue-meta'
 Vue.use(meta)
 
 /**

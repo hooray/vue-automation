@@ -1,3 +1,3 @@
 <template>
-	<div>登录信息：{{$cookies.get('token')}}</div>
+	<div>token信息：{{$store.state.token.token}}</div>
 </template>

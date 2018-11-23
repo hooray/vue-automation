@@ -9,10 +9,10 @@
 export default {
     methods: {
         user() {
-            if (this.$checkLogin()) {
-                alert(this.$cookies.get('token'));
+            if (this.$store.getters['token/isLogin']) {
+                alert('token信息：' + this.$store.state.token.token);
             } else {
-                this.$checkLoginAndJump();
+                this.$toLogin();
             }
         }
     }
