@@ -25,7 +25,7 @@ api.interceptors.request.use(
 			if (request.data instanceof FormData) {
 				if (store.getters['token/isLogin']) {
 					// 如果是 FormData 类型（上传图片）
-					request.data.append('token', window.$cookies.get('token'));
+					request.data.append('token', store.state.token.token);
 				}
 			} else {
 				// 带上 token
@@ -67,10 +67,10 @@ api.interceptors.response.use(
 			// });
 			return Promise.reject(response.data);
 		}
-		return response.data;
+		return Promise.resolve(response.data);
 	},
 	error => {
-		return Promise.resolve(error);
+		return Promise.reject(error);
 	}
 );
 
