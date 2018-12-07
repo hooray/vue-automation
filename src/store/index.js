@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import exampleModule from './modules/example'
-import tokenModule from './modules/token'
+import example from './modules/example.js'
+import global from './modules/global.js'
+import token from './modules/token.js'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
     modules: {
-        example: exampleModule,
-        token: tokenModule
+        example,
+        global,
+        token
     },
     strict: process.env.NODE_ENV !== 'production'
 })
