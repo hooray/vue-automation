@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions, mapMutations, mapState } from "vuex";
+import { mapGetters, mapActions, mapMutations, mapState } from 'vuex';
 
 export default {
     computed: {
@@ -17,15 +17,15 @@ export default {
             banner: state => state.example.banner
         }),
         ...mapGetters({
-            bannerCount: "example/bannerCount"
+            bannerCount: 'example/bannerCount'
         })
     },
     methods: {
         ...mapActions({
-            getInfo: "example/getBanner"
+            getInfo: 'example/getBanner'
         }),
         ...mapMutations({
-            removeLast: "example/removeLast"
+            removeLast: 'example/removeLast'
         }),
         getLength() {
             alert(this.bannerCount);

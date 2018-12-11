@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import store from '@/store/index'
+import Vue from 'vue';
+import Router from 'vue-router';
+import store from '@/store/index';
 
-Vue.use(Router)
+Vue.use(Router);
 
 import Root from './modules/root';
 import Example from './modules/example';
@@ -29,6 +29,6 @@ router.beforeEach((to, from, next) => {
     } else {
         next();
     }
-})
+});
 
-export default router
+export default router;

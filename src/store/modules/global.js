@@ -2,18 +2,18 @@
  * 存放全局公用状态
  */
 
-const state = {}
+const state = {};
 
-const getters = {}
+const getters = {};
 
-const actions = {}
+const actions = {};
 
-const mutations = {}
+const mutations = {};
 
 export default {
-	namespaced: true,
-	state,
-	actions,
-	getters,
-	mutations
-}
+    namespaced: true,
+    state,
+    actions,
+    getters,
+    mutations
+};

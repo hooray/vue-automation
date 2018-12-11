@@ -1,15 +1,15 @@
 <template>
     <div>
-        <example-list :list="list"></example-list>
+        <ExampleList :list="list"></ExampleList>
     </div>
 </template>
 
 <script>
-import exampleList from '@/components/exampleList';
+import ExampleList from '@/components/exampleList';
 
 export default {
     components: {
-        exampleList
+        ExampleList
     },
     data() {
         return {

@@ -1,5 +1,5 @@
 <template>
-	<div>
+    <div>
         <div id="nav">
             <router-link to="/example/sprite">sprite精灵图</router-link> |
             <router-link to="/example/axios">axios</router-link> |
@@ -14,5 +14,5 @@
             <router-link to="/example/permission/js">js鉴权</router-link>
         </div>
         <router-view />
-	</div>
+    </div>
 </template>

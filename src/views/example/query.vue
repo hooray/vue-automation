@@ -1,5 +1,5 @@
 <template>
-	<div>
-		<div>query:{{$route.query.test}}</div>
-	</div>
+    <div>
+        <div>query:{{$route.query.test}}</div>
+    </div>
 </template>
