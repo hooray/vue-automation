@@ -8500,9 +8500,9 @@ vue-style-loader@^4.1.0:
     loader-utils "^1.0.2"
 
 vue-template-compiler@^2.5.17:
-  version "2.5.20"
-  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.5.20.tgz#b9c01741b7e0261d1c5aac5937c93bde98f880f0"
-  integrity sha1-ucAXQbfgJh0cWqxZN8k73pj4gPA=
+  version "2.5.21"
+  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.5.21.tgz#a57ceb903177e8f643560a8d639a0f8db647054a"
+  integrity sha1-pXzrkDF36PZDVgqNY5oPjbZHBUo=
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -8513,9 +8513,9 @@ vue-template-es2015-compiler@^1.6.0:
   integrity sha1-3EJpcTMwLOMBdSQ1amxht7abShg=
 
 vue@^2.5.17:
-  version "2.5.20"
-  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.20.tgz#79fff9ccaa10cc37e7a7239b4c7adfac94df81ba"
-  integrity sha1-ef/5zKoQzDfnpyObTHrfrJTfgbo=
+  version "2.5.21"
+  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
+  integrity sha1-PTPc0Du4E5Es6JSoMDq1U2mcSoU=
 
 vuex@^3.0.1:
   version "3.0.1"

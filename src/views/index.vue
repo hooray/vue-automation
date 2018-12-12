@@ -1,5 +1,5 @@
 <template>
-	<div>
-		<router-link to="/example">演示Demo</router-link>
-	</div>
+    <div>
+        <RouterLink to="/example">演示Demo</RouterLink>
+    </div>
 </template>

@@ -14,26 +14,24 @@ export default {
     },
     methods: {
         getInfo() {
-            this.$axios
-                .all([
-                    this.$api.get('banner/list', {
-                        params: {
-                            categoryid: 1
-                        }
-                    }),
-                    this.$api.get('banner/list', {
-                        params: {
-                            categoryid: 2
-                        }
-                    })
-                ])
-                .then(
-                    this.$axios.spread((acct, perms) => {
-                        this.banner = acct.data.banner.concat(
-                            perms.data.banner
-                        );
-                    })
-                );
+            this.$axios.all([
+                this.$api.get('banner/list', {
+                    params: {
+                        categoryid: 1
+                    }
+                }),
+                this.$api.get('banner/list', {
+                    params: {
+                        categoryid: 2
+                    }
+                })
+            ]).then(
+                this.$axios.spread((acct, perms) => {
+                    this.banner = acct.data.banner.concat(
+                        perms.data.banner
+                    );
+                })
+            );
         }
     }
 };

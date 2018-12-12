@@ -5,16 +5,13 @@ module.exports = {
         es6: true
     },
     extends: [
-        "plugin:vue/essential",
+        "plugin:vue/strongly-recommended",
         "eslint:recommended"
     ],
     parserOptions: {
         ecmaVersion: 2015,
         parser: "babel-eslint"
     },
-    plugins: [
-        "vue"
-    ],
     rules: {
         // 代码风格
         "block-spacing": [2, "always"],
@@ -68,35 +65,28 @@ module.exports = {
             "after": true
         }],
         // Vue - https://github.com/vuejs/eslint-plugin-vue
-        "vue/attribute-hyphenation": [2, "never"],
-        "vue/component-name-in-template-casing": [2, "PascalCase", {
-            "ignores": []
+        "vue/html-indent": [2, 4],
+        "vue/html-self-closing": 0,
+        "vue/max-attributes-per-line": [2, {
+            "singleline": 3
         }],
-        "vue/html-closing-bracket-newline": [2, {
-            "singleline": "never",
-            "multiline": "always"
+        "vue/require-default-prop": 0,
+        "vue/singleline-html-element-content-newline": 0,
+        "vue/attributes-order": [2, {
+            "order": [
+                "DEFINITION",
+                "LIST_RENDERING",
+                "CONDITIONALS",
+                "RENDER_MODIFIERS",
+                "GLOBAL",
+                "UNIQUE",
+                "TWO_WAY_BINDING",
+                "OTHER_DIRECTIVES",
+                "OTHER_ATTR",
+                "EVENTS",
+                "CONTENT"
+            ]
         }],
-        "vue/html-closing-bracket-spacing": [2, {
-            "startTag": "never",
-            "endTag": "never",
-            "selfClosingTag": "always"
-        }],
-        "vue/html-indent": [2, 4, {
-            "attribute": 1,
-            "baseIndent": 1,
-            "closeBracket": 0,
-            "alignAttributesVertically": true,
-            "ignores": []
-        }],
-        "vue/html-quotes": [2, "double"],
-        "vue/name-property-casing": [2, "PascalCase"],
-        "vue/no-multi-spaces": [2, {
-            "ignoreProperties": false
-        }],
-        "vue/no-spaces-around-equal-signs-in-attribute": 2,
-        "vue/prop-name-casing": [2, "camelCase"],
-        "vue/v-bind-style": [2, "shorthand"],
-        "vue/v-on-style": [2, "shorthand"],
         "vue/order-in-components": [2, {
             "order": [
                 "el",
@@ -119,6 +109,7 @@ module.exports = {
                 "renderError"
             ]
         }],
-        "vue/this-in-template": [2, "never"]
+        "vue/this-in-template": [2, "never"],
+        "vue/script-indent": [2, 4]
     }
 };
