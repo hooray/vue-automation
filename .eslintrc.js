@@ -97,7 +97,7 @@ module.exports = {
         "vue/prop-name-casing": [2, "camelCase"],
         "vue/v-bind-style": [2, "shorthand"],
         "vue/v-on-style": [2, "shorthand"],
-        "vue/order-in-components": ["error", {
+        "vue/order-in-components": [2, {
             "order": [
                 "el",
                 "name",
