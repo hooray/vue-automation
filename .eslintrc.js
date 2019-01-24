@@ -4,13 +4,17 @@ module.exports = {
         browser: true,
         es6: true
     },
+    globals: {
+        process: true
+    },
     extends: [
         'plugin:vue/strongly-recommended',
         'eslint:recommended'
     ],
     parserOptions: {
         ecmaVersion: 2015,
-        parser: 'babel-eslint'
+        parser: 'babel-eslint',
+        sourceType: 'module'
     },
     rules: {
         // 代码风格
