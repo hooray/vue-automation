@@ -2,7 +2,7 @@ const path = require('path');
 const SpritesmithPlugin = require('webpack-spritesmith');
 
 module.exports = {
-    baseUrl: '',
+    publicPath: '',
     configureWebpack: {
         resolve: {
             modules: [

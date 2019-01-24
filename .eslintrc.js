@@ -13,7 +13,7 @@ module.exports = {
         parser: 'babel-eslint'
     },
     rules: {
-    // 代码风格
+        // 代码风格
         'block-spacing': [2, 'always'],
         'brace-style': [2, '1tbs', {
             'allowSingleLine': true
