@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ExampleList from '@/components/exampleList';
+import ExampleList from '@/components/exampleList'
 
 export default {
     components: {
@@ -14,7 +14,7 @@ export default {
     data() {
         return {
             list: ['张三', '李四', '王五']
-        };
+        }
     }
-};
+}
 </script>

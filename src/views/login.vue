@@ -13,16 +13,16 @@ export default {
                 if (this.$route.query.redirect) {
                     this.$router.replace({
                         path: this.$route.query.redirect
-                    });
+                    })
                 } else {
                     if (window.history.length <= 1) {
-                        this.$router.push({ path: '/' });
+                        this.$router.push({ path: '/' })
                     } else {
-                        this.$router.go(-1);
+                        this.$router.go(-1)
                     }
                 }
-            });
+            })
         }
     }
-};
+}
 </script>

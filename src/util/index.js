@@ -6,7 +6,7 @@ export default {
                 query: {
                     redirect: this.$route.fullPath
                 }
-            });
+            })
         };
     }
-};
+}

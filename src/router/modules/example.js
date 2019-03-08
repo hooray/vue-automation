@@ -40,4 +40,4 @@ export default [{
         path: 'permission/js',
         component: () => import('@/views/example/permission.js.vue')
     }]
-}];
+}]

@@ -12,20 +12,20 @@ export default {
     data() {
         return {
             cookie: ''
-        };
+        }
     },
     methods: {
         setCookie() {
-            this.$cookies.set('a', 'abc');
-            this.cookie = this.$cookies.get('a');
+            this.$cookies.set('a', 'abc')
+            this.cookie = this.$cookies.get('a')
         },
         removeCookie() {
-            this.$cookies.remove('a', 'abc');
-            this.cookie = this.$cookies.get('a');
+            this.$cookies.remove('a', 'abc')
+            this.cookie = this.$cookies.get('a')
         },
         isSetCookie() {
-            alert(this.$cookies.isKey('a'));
+            alert(this.$cookies.isKey('a'))
         }
     }
-};
+}
 </script>

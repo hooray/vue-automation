@@ -45,8 +45,11 @@ module.exports = {
         'no-multiple-empty-lines': [2, {
             'max': 1
         }],
+        'no-unneeded-ternary': [2, {
+            'defaultAssignment': false
+        }],
         'quotes': [2, 'single'],
-        'semi': [2, 'always'],
+        'semi': [2, 'never'],
         'space-before-blocks': [2, 'always'],
         'space-before-function-paren': [2, 'never'],
         'space-in-parens': [2, 'never'],

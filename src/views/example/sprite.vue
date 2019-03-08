@@ -15,13 +15,13 @@ export default {
     data() {
         return {
             logo: ''
-        };
+        }
     },
     created() {
         // 在 js 里引用图片，需要用 require 的方式
-        this.logo = require('../../assets/images/example.png');
+        this.logo = require('../../assets/images/example.png')
     }
-};
+}
 </script>
 
 <style lang="scss" scoped>

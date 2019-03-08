@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions, mapMutations, mapState } from 'vuex';
+import { mapGetters, mapActions, mapMutations, mapState } from 'vuex'
 
 export default {
     computed: {
@@ -28,10 +28,10 @@ export default {
             removeLast: 'example/removeLast'
         }),
         getLength() {
-            alert(this.bannerCount);
+            alert(this.bannerCount)
         }
     }
-};
+}
 </script>
 
 <style lang="scss" scoped>

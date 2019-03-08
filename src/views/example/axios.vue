@@ -10,7 +10,7 @@ export default {
     data() {
         return {
             banner: []
-        };
+        }
     },
     methods: {
         getInfo() {
@@ -29,12 +29,12 @@ export default {
                 this.$axios.spread((acct, perms) => {
                     this.banner = acct.data.banner.concat(
                         perms.data.banner
-                    );
+                    )
                 })
-            );
+            )
         }
     }
-};
+}
 </script>
 
 <style lang="scss" scoped>

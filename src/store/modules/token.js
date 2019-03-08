@@ -1,24 +1,24 @@
 import {
     api
-} from '@/api';
+} from '@/api'
 
 const state = {
     token: localStorage.token,
     failuretime: localStorage.failuretime
-};
+}
 
 const getters = {
     isLogin: state => {
-        let retn = false;
+        let retn = false
         if (state.token != null) {
-            let unix = Date.parse(new Date());
+            let unix = Date.parse(new Date())
             if (unix < state.failuretime * 1000) {
-                retn = true;
+                retn = true
             }
         }
-        return retn;
+        return retn
     }
-};
+}
 
 const actions = {
     login({
@@ -29,8 +29,8 @@ const actions = {
             commit('setData', {
                 token: '1234567890',
                 failuretime: Date.parse(new Date()) / 1000 + 24 * 60 * 60
-            });
-            resolve();
+            })
+            resolve()
 
             // api.post('member/login', data).then(res => {
             // 	commit('setData', res.data);
@@ -38,18 +38,18 @@ const actions = {
             // }).catch((error) => {
             // 	reject(error);
             // });
-        });
+        })
     }
-};
+}
 
 const mutations = {
     setData(state, data) {
-        localStorage.setItem('token', data.token);
-        localStorage.setItem('failuretime', data.failuretime);
-        state.token = data.token;
-        state.failuretime = data.failuretime;
+        localStorage.setItem('token', data.token)
+        localStorage.setItem('failuretime', data.failuretime)
+        state.token = data.token
+        state.failuretime = data.failuretime
     }
-};
+}
 
 export default {
     namespaced: true,
@@ -57,4 +57,4 @@ export default {
     actions,
     getters,
     mutations
-};
+}

@@ -1,16 +1,16 @@
 import {
     api
-} from '@/api';
+} from '@/api'
 
 const state = {
     banner: []
-};
+}
 
 const getters = {
     bannerCount: state => {
-        return state.banner.length;
+        return state.banner.length
     }
-};
+}
 
 const actions = {
     getBanner({
@@ -21,19 +21,19 @@ const actions = {
                 categoryid: 1
             }
         }).then(res => {
-            commit('setBanner', res.data.banner);
-        });
+            commit('setBanner', res.data.banner)
+        })
     }
-};
+}
 
 const mutations = {
     setBanner(state, banner) {
-        state.banner = banner;
+        state.banner = banner
     },
     removeLast(state) {
-        state.banner.splice(state.banner.length - 1, 1);
+        state.banner.splice(state.banner.length - 1, 1)
     }
-};
+}
 
 export default {
     namespaced: true,
@@ -41,4 +41,4 @@ export default {
     actions,
     getters,
     mutations
-};
+}
