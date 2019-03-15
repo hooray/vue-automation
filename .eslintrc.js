@@ -5,7 +5,8 @@ module.exports = {
         es6: true
     },
     globals: {
-        process: true
+        process: true,
+        require: true
     },
     extends: [
         'plugin:vue/strongly-recommended',
@@ -74,49 +75,12 @@ module.exports = {
         // Vue - https://github.com/vuejs/eslint-plugin-vue
         'vue/html-indent': [2, 4],
         'vue/html-self-closing': 0,
-        'vue/max-attributes-per-line': [2, {
-            'singleline': 3
-        }],
+        'vue/max-attributes-per-line': 0,
         'vue/require-default-prop': 0,
         'vue/singleline-html-element-content-newline': 0,
-        'vue/attributes-order': [2, {
-            'order': [
-                'DEFINITION',
-                'LIST_RENDERING',
-                'CONDITIONALS',
-                'RENDER_MODIFIERS',
-                'GLOBAL',
-                'UNIQUE',
-                'TWO_WAY_BINDING',
-                'OTHER_DIRECTIVES',
-                'OTHER_ATTR',
-                'EVENTS',
-                'CONTENT'
-            ]
-        }],
-        'vue/order-in-components': [2, {
-            'order': [
-                'el',
-                'name',
-                'parent',
-                'functional',
-                ['delimiters', 'comments'],
-                ['components', 'directives', 'filters'],
-                'extends',
-                'mixins',
-                'inheritAttrs',
-                'model',
-                ['props', 'propsData'],
-                'data',
-                'computed',
-                'watch',
-                'LIFECYCLE_HOOKS',
-                'methods',
-                ['template', 'render'],
-                'renderError'
-            ]
-        }],
-        'vue/this-in-template': [2, 'never'],
+        'vue/attributes-order': 2,
+        'vue/order-in-components': 2,
+        'vue/this-in-template': 2,
         'vue/script-indent': [2, 4]
     }
 };

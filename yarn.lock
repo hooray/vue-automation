@@ -1144,7 +1144,12 @@ acorn@^5.0.0, acorn@^5.5.0, acorn@^5.6.2, acorn@^5.7.3:
   resolved "http://registry.npm.taobao.org/acorn/download/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha1-Z6ojG/iBKXS4UjWpZ3Hra9B+onk=
 
-acorn@^6.0.2, acorn@^6.0.6:
+acorn@^6.0.2, acorn@^6.0.7:
+  version "6.1.1"
+  resolved "http://registry.npm.taobao.org/acorn/download/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
+  integrity sha1-fSWuBbuK0fm2mRCOEJTs14hK3B8=
+
+acorn@^6.0.6:
   version "6.1.0"
   resolved "http://registry.npm.taobao.org/acorn/download/acorn-6.1.0.tgz#b0a3be31752c97a0f7013c5f4903b71a05db6818"
   integrity sha1-sKO+MXUsl6D3ATxfSQO3GgXbaBg=
@@ -1179,10 +1184,20 @@ ajv@^5.2.3, ajv@^5.3.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-ajv@^6.1.0, ajv@^6.5.3, ajv@^6.5.5, ajv@^6.6.1, ajv@^6.9.1:
+ajv@^6.1.0, ajv@^6.5.5, ajv@^6.6.1:
   version "6.9.1"
   resolved "http://registry.npm.taobao.org/ajv/download/ajv-6.9.1.tgz#a4d3683d74abc5670e75f0b16520f70a20ea8dc1"
   integrity sha1-pNNoPXSrxWcOdfCxZSD3CiDqjcE=
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+ajv@^6.9.1:
+  version "6.10.0"
+  resolved "http://registry.npm.taobao.org/ajv/download/ajv-6.10.0.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fajv%2Fdownload%2Fajv-6.10.0.tgz#90d0d54439da587cd7e843bfb7045f50bd22bdf1"
+  integrity sha1-kNDVRDnaWHzX6EO/twRfUL0ivfE=
   dependencies:
     fast-deep-equal "^2.0.1"
     fast-json-stable-stringify "^2.0.0"
@@ -1233,10 +1248,10 @@ ansi-regex@^3.0.0:
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
   integrity sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
 
-ansi-regex@^4.0.0:
-  version "4.0.0"
-  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-4.0.0.tgz#70de791edf021404c3fd615aa89118ae0432e5a9"
-  integrity sha1-cN55Ht8CFATD/WFaqJEYrgQy5ak=
+ansi-regex@^4.1.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
+  integrity sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc=
 
 ansi-styles@^2.2.1:
   version "2.2.1"
@@ -2977,6 +2992,13 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
+doctrine@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/doctrine/download/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
+  integrity sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=
+  dependencies:
+    esutils "^2.0.2"
+
 dom-converter@~0.2:
   version "0.2.0"
   resolved "http://registry.npm.taobao.org/dom-converter/download/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -3116,8 +3138,8 @@ elliptic@^6.0.0:
 
 emoji-regex@^7.0.1:
   version "7.0.3"
-  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
-  integrity sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
+  resolved "http://registry.npm.taobao.org/emoji-regex/download/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
+  integrity sha1-kzoEBShgyF6DwSJHnEdIqOTHIVY=
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -3242,11 +3264,11 @@ eslint-plugin-vue@^4.7.1:
     vue-eslint-parser "^2.0.3"
 
 eslint-plugin-vue@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-5.1.0.tgz#d0d373334be8140d698ec4e1fb83f09faa48081b"
-  integrity sha512-C7avvbGLb9J1PyGiFolPcGR4ljUc+dKm5ZJdrUKXwXFxHHx4SqOmRI29AsFyW7PbCGcnOvIlaq7NJS6HDIak+g==
+  version "5.2.2"
+  resolved "http://registry.npm.taobao.org/eslint-plugin-vue/download/eslint-plugin-vue-5.2.2.tgz#86601823b7721b70bc92d54f1728cfc03b36283c"
+  integrity sha1-hmAYI7dyG3C8ktVPFyjPwDs2KDw=
   dependencies:
-    vue-eslint-parser "^4.0.2"
+    vue-eslint-parser "^5.0.0"
 
 eslint-scope@3.7.1:
   version "3.7.1"
@@ -3264,10 +3286,10 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-scope@^4.0.0:
-  version "4.0.0"
-  resolved "http://registry.npm.taobao.org/eslint-scope/download/eslint-scope-4.0.0.tgz#50bf3071e9338bcdc43331794a0cb533f0136172"
-  integrity sha1-UL8wcekzi83EMzF5Sgy1M/ATYXI=
+eslint-scope@^4.0.0, eslint-scope@^4.0.2:
+  version "4.0.2"
+  resolved "http://registry.npm.taobao.org/eslint-scope/download/eslint-scope-4.0.2.tgz#5f10cd6cabb1965bf479fa65745673439e21cb0e"
+  integrity sha1-XxDNbKuxllv0efpldFZzQ54hyw4=
   dependencies:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
@@ -3327,34 +3349,34 @@ eslint@^4.19.1:
     text-table "~0.2.0"
 
 eslint@^5.10.0:
-  version "5.13.0"
-  resolved "http://registry.npm.taobao.org/eslint/download/eslint-5.13.0.tgz#ce71cc529c450eed9504530939aa97527861ede9"
-  integrity sha1-znHMUpxFDu2VBFMJOaqXUnhh7ek=
+  version "5.15.1"
+  resolved "http://registry.npm.taobao.org/eslint/download/eslint-5.15.1.tgz#8266b089fd5391e0009a047050795b1d73664524"
+  integrity sha1-gmawif1TkeAAmgRwUHlbHXNmRSQ=
   dependencies:
     "@babel/code-frame" "^7.0.0"
-    ajv "^6.5.3"
+    ajv "^6.9.1"
     chalk "^2.1.0"
     cross-spawn "^6.0.5"
     debug "^4.0.1"
-    doctrine "^2.1.0"
-    eslint-scope "^4.0.0"
+    doctrine "^3.0.0"
+    eslint-scope "^4.0.2"
     eslint-utils "^1.3.1"
     eslint-visitor-keys "^1.0.0"
-    espree "^5.0.0"
+    espree "^5.0.1"
     esquery "^1.0.1"
     esutils "^2.0.2"
-    file-entry-cache "^2.0.0"
+    file-entry-cache "^5.0.1"
     functional-red-black-tree "^1.0.1"
     glob "^7.1.2"
     globals "^11.7.0"
     ignore "^4.0.6"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
-    inquirer "^6.1.0"
+    inquirer "^6.2.2"
     js-yaml "^3.12.0"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.3.0"
-    lodash "^4.17.5"
+    lodash "^4.17.11"
     minimatch "^3.0.4"
     mkdirp "^0.5.1"
     natural-compare "^1.4.0"
@@ -3365,7 +3387,7 @@ eslint@^5.10.0:
     semver "^5.5.1"
     strip-ansi "^4.0.0"
     strip-json-comments "^2.0.1"
-    table "^5.0.2"
+    table "^5.2.3"
     text-table "^0.2.0"
 
 espree@^3.5.2, espree@^3.5.4:
@@ -3378,19 +3400,19 @@ espree@^3.5.2, espree@^3.5.4:
 
 espree@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-4.1.0.tgz#728d5451e0fd156c04384a7ad89ed51ff54eb25f"
-  integrity sha512-I5BycZW6FCVIub93TeVY1s7vjhP9CY6cXCznIRfiig7nRviKZYdRnj/sHEWC6A7WE9RDWOFq9+7OsWSYz8qv2w==
+  resolved "http://registry.npm.taobao.org/espree/download/espree-4.1.0.tgz#728d5451e0fd156c04384a7ad89ed51ff54eb25f"
+  integrity sha1-co1UUeD9FWwEOEp62J7VH/VOsl8=
   dependencies:
     acorn "^6.0.2"
     acorn-jsx "^5.0.0"
     eslint-visitor-keys "^1.0.0"
 
-espree@^5.0.0:
-  version "5.0.0"
-  resolved "http://registry.npm.taobao.org/espree/download/espree-5.0.0.tgz#fc7f984b62b36a0f543b13fb9cd7b9f4a7f5b65c"
-  integrity sha1-/H+YS2Kzag9UOxP7nNe59Kf1tlw=
+espree@^5.0.1:
+  version "5.0.1"
+  resolved "http://registry.npm.taobao.org/espree/download/espree-5.0.1.tgz#5d6526fa4fc7f0788a5cf75b15f30323e2f81f7a"
+  integrity sha1-XWUm+k/H8HiKXPdbFfMDI+L4H3o=
   dependencies:
-    acorn "^6.0.2"
+    acorn "^6.0.7"
     acorn-jsx "^5.0.0"
     eslint-visitor-keys "^1.0.0"
 
@@ -3730,6 +3752,13 @@ file-entry-cache@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-4.0.0.tgz#633567d15364aefe0b299e1e217735e8f3a9f6e8"
   integrity sha512-AVSwsnbV8vH/UVbvgEhf3saVQXORNv0ZzSkvkhQIaia5Tia+JhGTaa/ePUSVoPHQyGayQNmYfkzFi3WZV5zcpA==
+  dependencies:
+    flat-cache "^2.0.1"
+
+file-entry-cache@^5.0.1:
+  version "5.0.1"
+  resolved "http://registry.npm.taobao.org/file-entry-cache/download/file-entry-cache-5.0.1.tgz#ca0f6efa6dd3d561333fb14515065c2fafdf439c"
+  integrity sha1-yg9u+m3T1WEzP7FFFQZcL6/fQ5w=
   dependencies:
     flat-cache "^2.0.1"
 
@@ -4088,7 +4117,7 @@ glob-to-regexp@^0.3.0:
 
 glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@~7.1.1:
   version "7.1.3"
-  resolved "http://registry.npm.taobao.org/glob/download/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
+  resolved "http://registry.npm.taobao.org/glob/download/glob-7.1.3.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fglob%2Fdownload%2Fglob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   integrity sha1-OWCDLT8VdBCDQtr9OmezMsCWnfE=
   dependencies:
     fs.realpath "^1.0.0"
@@ -4650,7 +4679,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-inquirer@^6.1.0:
+inquirer@^6.2.2:
   version "6.2.2"
   resolved "http://registry.npm.taobao.org/inquirer/download/inquirer-6.2.2.tgz#46941176f65c9eb20804627149b743a218f25406"
   integrity sha1-RpQRdvZcnrIIBGJxSbdDohjyVAY=
@@ -5130,7 +5159,15 @@ js-tokens@^3.0.2:
   resolved "http://registry.npm.taobao.org/js-tokens/download/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.12.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
+js-yaml@^3.12.0:
+  version "3.12.2"
+  resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
+  integrity sha1-7x0GfFqdnLZb1y8oW12BBcd/FPw=
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.12.1"
   resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
   integrity sha1-KVyGMqGKI+BUz1ydPOyv5ngWdgA=
@@ -5862,7 +5899,7 @@ ms@2.0.0:
 
 ms@^2.1.1:
   version "2.1.1"
-  resolved "http://registry.npm.taobao.org/ms/download/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  resolved "http://registry.npm.taobao.org/ms/download/ms-2.1.1.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fms%2Fdownload%2Fms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha1-MKWGTrPrsKZvLr5tcnrwagnYbgo=
 
 multicast-dns-service-types@^1.1.0:
@@ -7105,10 +7142,10 @@ postcss-selector-parser@^5.0.0, postcss-selector-parser@^5.0.0-rc.4:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-sorting@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-4.0.1.tgz#4bb4eb40e07e2b74e49f6f97fd4317fa73bd65a8"
-  integrity sha512-YNRq7ChWFsLsns78zutLBWp6kvfZr/3YYf9q54P/fBpIHhf8gwbKvr5XHAt2l69SS08lfGtB8gG8m/62gsuTgw==
+postcss-sorting@^4.1.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/postcss-sorting/download/postcss-sorting-4.1.0.tgz#a107f0bf3852977fa64e4442bc340c88d5aacdb3"
+  integrity sha1-oQfwvzhSl3+mTkRCvDQMiNWqzbM=
   dependencies:
     lodash "^4.17.4"
     postcss "^7.0.0"
@@ -8490,13 +8527,13 @@ string-width@^1.0.1, string-width@^1.0.2:
     strip-ansi "^4.0.0"
 
 string-width@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/string-width/-/string-width-3.0.0.tgz#5a1690a57cc78211fffd9bf24bbe24d090604eb1"
-  integrity sha512-rr8CUxBbvOZDUvc5lNIJ+OC1nPVpz+Siw9VBtUjB9b6jZehZLFt0JMCZzShFHIsI8cbhm0EsNIfWJMFV3cu3Ew==
+  version "3.1.0"
+  resolved "http://registry.npm.taobao.org/string-width/download/string-width-3.1.0.tgz#22767be21b62af1081574306f69ac51b62203961"
+  integrity sha1-InZ74htirxCBV0MG9prFG2IgOWE=
   dependencies:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
-    strip-ansi "^5.0.0"
+    strip-ansi "^5.1.0"
 
 string.prototype.padend@^3.0.0:
   version "3.0.0"
@@ -8559,12 +8596,12 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.0.0:
-  version "5.0.0"
-  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.0.0.tgz#f78f68b5d0866c20b2c9b8c61b5298508dc8756f"
-  integrity sha1-949otdCGbCCyybjGG1KYUI3IdW8=
+strip-ansi@^5.0.0, strip-ansi@^5.1.0:
+  version "5.1.0"
+  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.1.0.tgz#55aaa54e33b4c0649a7338a43437b1887d153ec4"
+  integrity sha1-VaqlTjO0wGSaczikNDexiH0VPsQ=
   dependencies:
-    ansi-regex "^4.0.0"
+    ansi-regex "^4.1.0"
 
 strip-bom-stream@^1.0.0:
   version "1.0.0"
@@ -8642,18 +8679,18 @@ stylelint-config-standard@^18.2.0:
     stylelint-config-recommended "^2.1.0"
 
 stylelint-order@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-2.0.0.tgz#f19400e1d42a844bfd149fae1daa02e671a9b2f2"
-  integrity sha512-rGmvP5zSCxvmBYP8DgzmdMhMMM+degsQCXrzYDmqPmeyU2bWmQTt2mH157Svj0WwHQn1LG9aQHdvKZfpfg2t4A==
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/stylelint-order/download/stylelint-order-2.1.0.tgz#fc64625c26b93755773bd67c1203381194aded04"
+  integrity sha1-/GRiXCa5N1V3O9Z8EgM4EZSt7QQ=
   dependencies:
     lodash "^4.17.10"
     postcss "^7.0.2"
-    postcss-sorting "^4.0.1"
+    postcss-sorting "^4.1.0"
 
 stylelint-scss@^3.4.1:
-  version "3.5.3"
-  resolved "http://registry.npm.taobao.org/stylelint-scss/download/stylelint-scss-3.5.3.tgz#e158b3061eeec26d7f6088f346998a797432f3c8"
-  integrity sha1-4VizBh7uwm1/YIjzRpmKeXQy88g=
+  version "3.5.4"
+  resolved "http://registry.npm.taobao.org/stylelint-scss/download/stylelint-scss-3.5.4.tgz#ff3ee989ac48f5c4f57313523b5ace059ffd6cc2"
+  integrity sha1-/z7piaxI9cT1cxNSO1rOBZ/9bMI=
   dependencies:
     lodash "^4.17.11"
     postcss-media-query-parser "^0.2.3"
@@ -8787,7 +8824,7 @@ table@^5.0.0:
     slice-ansi "2.0.0"
     string-width "^2.1.1"
 
-table@^5.0.2:
+table@^5.2.3:
   version "5.2.3"
   resolved "http://registry.npm.taobao.org/table/download/table-5.2.3.tgz#cde0cc6eb06751c009efab27e8c820ca5b67b7f2"
   integrity sha1-zeDMbrBnUcAJ76sn6Mggyltnt/I=
@@ -9430,10 +9467,10 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
-vue-eslint-parser@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-4.0.3.tgz#80cf162e484387b2640371ad21ba1f86e0c10a61"
-  integrity sha512-AUeQsYdO6+7QXCems+WvGlrXd37PHv/zcRQSQdY1xdOMwdFAPEnMBsv7zPvk0TPGulXkK/5p/ITgrjiYB7k3ag==
+vue-eslint-parser@^5.0.0:
+  version "5.0.0"
+  resolved "http://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
+  integrity sha1-APTk2pTsl0uCGib/DtD3p4QCuKE=
   dependencies:
     debug "^4.1.0"
     eslint-scope "^4.0.0"
@@ -9482,9 +9519,9 @@ vue-style-loader@^4.1.0:
     loader-utils "^1.0.2"
 
 vue-template-compiler@^2.5.17:
-  version "2.6.6"
-  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.6.tgz#a807acbf3d51971d3721d75ecb1b927b517c1a02"
-  integrity sha1-qAesvz1Rlx03IddeyxuSe1F8GgI=
+  version "2.6.9"
+  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.9.tgz#26600415ff81a7a241aebc2d4e0abaa0f1a07915"
+  integrity sha1-JmAEFf+Bp6JBrrwtTgq6oPGgeRU=
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -9495,9 +9532,9 @@ vue-template-es2015-compiler@^1.8.2:
   integrity sha1-3XPoC6WLtl3XqKoq7vYInPYRbyo=
 
 vue@^2.5.17:
-  version "2.6.6"
-  resolved "http://registry.npm.taobao.org/vue/download/vue-2.6.6.tgz#dde41e483c11c46a7bf523909f4f2f816ab60d25"
-  integrity sha1-3eQeSDwRxGp79SOQn08vgWq2DSU=
+  version "2.6.9"
+  resolved "http://registry.npm.taobao.org/vue/download/vue-2.6.9.tgz#415c1cc1a5ed00c8f0acdd0a948139d12b7ea6b3"
+  integrity sha1-QVwcwaXtAMjwrN0KlIE50St+prM=
 
 vuex@^3.0.1:
   version "3.1.0"
@@ -9624,8 +9661,8 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
 
 webpack-spritesmith@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-spritesmith/-/webpack-spritesmith-1.0.0.tgz#8ae2f660fde3005eb74a36267a4160e7ee84befe"
-  integrity sha512-lLFLpjnpSQn5NKNffu4MFYx1MxpF9aJnKFwwQCCENW6iF8Qu8X8mtfehHLF3a2D9wahZ46v8STFZcWl2FqZufw==
+  resolved "http://registry.npm.taobao.org/webpack-spritesmith/download/webpack-spritesmith-1.0.0.tgz#8ae2f660fde3005eb74a36267a4160e7ee84befe"
+  integrity sha1-iuL2YP3jAF63SjYmekFg5+6Evv4=
   dependencies:
     gaze "^1.1.2"
     loader-utils "^1.1.0"

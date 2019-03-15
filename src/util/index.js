@@ -7,6 +7,6 @@ export default {
                     redirect: this.$route.fullPath
                 }
             })
-        };
+        }
     }
 }

@@ -1,5 +1,5 @@
-const path = require('path');
-const SpritesmithPlugin = require('webpack-spritesmith');
+const path = require('path')
+const SpritesmithPlugin = require('webpack-spritesmith')
 
 module.exports = {
     publicPath: '',
@@ -23,10 +23,10 @@ module.exports = {
                 // 样式文件中调用雪碧图地址写法
                 apiOptions: {
                     generateSpriteName: function(fileName) {
-                        var parsed = path.parse(fileName);
-                        var dir = parsed.dir.split(path.sep);
-                        var moduleName = dir[dir.length - 1];
-                        return moduleName + '__' + parsed.name;
+                        var parsed = path.parse(fileName)
+                        var dir = parsed.dir.split(path.sep)
+                        var moduleName = dir[dir.length - 1]
+                        return moduleName + '__' + parsed.name
                     },
                     cssImageRef: '~example.[hash].png'
                 },
@@ -36,4 +36,4 @@ module.exports = {
             })
         ]
     }
-};
+}
