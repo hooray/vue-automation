@@ -8,10 +8,10 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.19.0",
         "vue": "^2.5.17",
         "vue-cookies": "^1.5.7",
-        "vue-meta": "^1.5.5",
+        "vue-meta": "^2.0.3",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
     },
@@ -24,10 +24,10 @@
         "eslint-plugin-vue": "^5.0.0",
         "node-sass": "^4.10.0",
         "sass-loader": "^7.1.0",
-        "stylelint": "^9.9.0",
+        "stylelint": "^10.1.0",
         "stylelint-config-recommended-scss": "^3.2.0",
         "stylelint-config-standard": "^18.2.0",
-        "stylelint-order": "^2.0.0",
+        "stylelint-order": "^3.0.0",
         "stylelint-scss": "^3.4.1",
         "vue-template-compiler": "^2.5.17",
         "webpack-spritesmith": "^1.0.0"
