@@ -1,0 +1,30 @@
+// @mixin 通过 @include 调用使用
+// % 通过 @extend 调用使用
+
+// 文字超出隐藏，默认为单行超出隐藏，可设置多行
+@mixin text-overflow($line: 1) {
+    @if ($line==1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    @else {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        overflow: hidden;
+    }
+}
+
+// 文字两端对齐
+%justify-align {
+    text-align: justify;
+    text-align-last: justify;
+}
+
+// 定位水平居中
+%position-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

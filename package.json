@@ -24,6 +24,7 @@
         "eslint-plugin-vue": "^5.0.0",
         "node-sass": "^4.10.0",
         "sass-loader": "^7.1.0",
+        "sass-resources-loader": "^2.0.1",
         "stylelint": "^10.1.0",
         "stylelint-config-recommended-scss": "^3.2.0",
         "stylelint-config-standard": "^18.2.0",

@@ -11,6 +11,7 @@
         "indentation": 4,
         "max-empty-lines": 1,
         "length-zero-no-unit": true,
+        "at-rule-empty-line-before": "never",
         "order/properties-order": [
             "position",
             "top",

@@ -25,32 +25,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/sprites/_example.scss";
 @import "@/assets/styles/example.scss";
 
 .sprites {
     padding: 10px;
-
     .address,
     .feedback,
     .payment {
         display: inline-block;
         margin-right: 10px;
     }
-
     .address {
         @include sprite($example-address);
     }
-
     .feedback {
         @include sprite($example-feedback);
     }
-
     .payment {
         @include sprite($example-payment);
     }
 }
-
 .logo {
     width: 200px;
     height: 200px;
