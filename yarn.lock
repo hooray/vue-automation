@@ -1226,7 +1226,7 @@ acorn-jsx@^3.0.0:
 
 acorn-jsx@^5.0.0:
   version "5.0.1"
-  resolved "http://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
+  resolved "https://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
   integrity sha1-MqBk/ZJUKSFqCbFBECv90YX65A4=
 
 acorn-walk@^6.1.1:
@@ -1580,6 +1580,18 @@ babel-eslint@^10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.1.tgz#919681dc099614cd7d31d45c8908695092a1faed"
   integrity sha512-z7OT1iNV+TjOwHNLLyJk+HN+YVWX+CLE6fPD2SymJZOZQBs+QIexFjhm4keGTm8MW9xr4EC9Q0PbaLB24V5GoQ==
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    eslint-scope "3.7.1"
+    eslint-visitor-keys "^1.0.0"
+
+babel-eslint@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.npm.taobao.org/babel-eslint/download/babel-eslint-10.0.2.tgz#182d5ac204579ff0881684b040560fdcc1558456"
+  integrity sha1-GC1awgRXn/CIFoSwQFYP3MFVhFY=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
@@ -2899,7 +2911,7 @@ debug@^3.1.0, debug@^3.2.5, debug@^3.2.6:
 
 debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  resolved "https://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
   dependencies:
     ms "^2.1.1"
@@ -2942,10 +2954,10 @@ deepmerge@^1.5.2:
   resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-1.5.2.tgz?cache=0&sync_timestamp=1560543559350&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha1-EEmdhohEza1P7ghC34x/bwyVp1M=
 
-deepmerge@^3.2.0:
-  version "3.2.0"
-  resolved "http://registry.npm.taobao.org/deepmerge/download/deepmerge-3.2.0.tgz#58ef463a57c08d376547f8869fdc5bcee957f44e"
-  integrity sha1-WO9GOlfAjTdlR/iGn9xbzulX9E4=
+deepmerge@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-3.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+  integrity sha1-08R/1vOpPVF7FEJrBiihewEl9fc=
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -3361,9 +3373,9 @@ eslint-plugin-vue@^4.7.1:
     vue-eslint-parser "^2.0.3"
 
 eslint-plugin-vue@^5.0.0:
-  version "5.2.2"
-  resolved "http://registry.npm.taobao.org/eslint-plugin-vue/download/eslint-plugin-vue-5.2.2.tgz#86601823b7721b70bc92d54f1728cfc03b36283c"
-  integrity sha1-hmAYI7dyG3C8ktVPFyjPwDs2KDw=
+  version "5.2.3"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-vue/download/eslint-plugin-vue-5.2.3.tgz#3ee7597d823b5478804b2feba9863b1b74273961"
+  integrity sha1-PudZfYI7VHiASy/rqYY7G3QnOWE=
   dependencies:
     vue-eslint-parser "^5.0.0"
 
@@ -3497,7 +3509,7 @@ espree@^3.5.2, espree@^3.5.4:
 
 espree@^4.1.0:
   version "4.1.0"
-  resolved "http://registry.npm.taobao.org/espree/download/espree-4.1.0.tgz#728d5451e0fd156c04384a7ad89ed51ff54eb25f"
+  resolved "https://registry.npm.taobao.org/espree/download/espree-4.1.0.tgz?cache=0&sync_timestamp=1561171239020&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fespree%2Fdownload%2Fespree-4.1.0.tgz#728d5451e0fd156c04384a7ad89ed51ff54eb25f"
   integrity sha1-co1UUeD9FWwEOEp62J7VH/VOsl8=
   dependencies:
     acorn "^6.0.2"
@@ -9675,7 +9687,7 @@ vue-eslint-parser@^2.0.3:
 
 vue-eslint-parser@^5.0.0:
   version "5.0.0"
-  resolved "http://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
+  resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
   integrity sha1-APTk2pTsl0uCGib/DtD3p4QCuKE=
   dependencies:
     debug "^4.1.0"
@@ -9702,11 +9714,11 @@ vue-loader@^15.7.0:
     vue-style-loader "^4.1.0"
 
 vue-meta@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npm.taobao.org/vue-meta/download/vue-meta-2.0.3.tgz#7de9f29400f06fb20ee659338b57a5f5ceff4341"
-  integrity sha1-fenylADwb7IO5lkzi1el9c7/Q0E=
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/vue-meta/download/vue-meta-2.0.4.tgz?cache=0&sync_timestamp=1561243641267&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-meta%2Fdownload%2Fvue-meta-2.0.4.tgz#dcd6ab7f2ad16a8c6bf1ced5ae1e3e3402af0459"
+  integrity sha1-3NarfyrRaoxr8c7Vrh4+NAKvBFk=
   dependencies:
-    deepmerge "^3.2.0"
+    deepmerge "^3.3.0"
 
 vue-router@^3.0.1:
   version "3.0.6"
