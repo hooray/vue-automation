@@ -9,8 +9,8 @@ import Example from './modules/example'
 
 const router = new Router({
     routes: [
-        ...Root,
-        ...Example
+        Root,
+        Example
     ]
 })
 

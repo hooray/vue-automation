@@ -1,7 +1,8 @@
-export default [{
+export default {
     path: '/',
-    component: () => import('@/views/index.vue')
-}, {
-    path: '/login',
-    component: () => import('@/views/login.vue')
-}]
+    component: () => import(/* webpackChunkName: 'root' */ '@/views/index.vue'),
+    children: [{
+        path: '/login',
+        component: () => import(/* webpackChunkName: 'root' */ '@/views/login.vue')
+    }]
+}

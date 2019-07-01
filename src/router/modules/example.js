@@ -1,43 +1,43 @@
-export default [{
+export default {
     path: '/example',
     redirect: '/example/sprite',
-    component: () => import('@/views/example/index.vue'),
+    component: () => import(/* webpackChunkName: 'example' */ '@/views/example/index.vue'),
     children: [{
         path: 'sprite',
-        component: () => import('@/views/example/sprite.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/sprite.vue')
     }, {
         path: 'axios',
-        component: () => import('@/views/example/axios.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/axios.vue')
     }, {
         path: 'cookie',
-        component: () => import('@/views/example/cookie.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/cookie.vue')
     }, {
         path: 'meta',
-        component: () => import('@/views/example/meta.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/meta.vue')
     }, {
         path: 'vuex',
-        component: () => import('@/views/example/vuex.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/vuex.vue')
     }, {
         path: 'component',
-        component: () => import('@/views/example/component.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/component.vue')
     }, {
         path: 'params/:test',
         name: 'exampleParams', // 设置路由的name时，建议加上模块名，避免name和其他模块重名
-        component: () => import('@/views/example/params.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/params.vue')
     }, {
         path: 'query',
-        component: () => import('@/views/example/query.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/query.vue')
     }, {
         path: 'reload',
-        component: () => import('@/views/example/reload.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/reload.vue')
     }, {
         path: 'permission/router',
-        component: () => import('@/views/example/permission.router.vue'),
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/permission.router.vue'),
         meta: {
             requireLogin: true // 鉴权
         }
     }, {
         path: 'permission/js',
-        component: () => import('@/views/example/permission.js.vue')
+        component: () => import(/* webpackChunkName: 'example' */ '@/views/example/permission.js.vue')
     }]
-}]
+}
