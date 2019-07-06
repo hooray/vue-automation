@@ -13,11 +13,21 @@
 - vue-meta
 - node-sass
 - sass-loader
+- sass-resources-loader
+- svg-sprite-loader
 - webpack-spritesmith
 
 ## 例子
 
 拉取到本地运行后，会看到部分功能演示，同时项目目录里带有 `example` 的目录均为演示代码。
+
+## 全局 SCSS
+
+在 `assets/styles` 目录下有个 `global` 文件夹，该文件夹用于存放全局的 .scss 文件，也就是说在这个目录里的文件，无需在页面上引用即可生效并使用。
+
+例子中默认存放了 `utils.scss` 文件，里面有几个 `@mixin` 和 `%` ，你可以尝试在页面中使用它们看看效果。
+
+同样，sprites 生成的 .scss 文件也是默认全局。
 
 ## IDE（编辑器）
 

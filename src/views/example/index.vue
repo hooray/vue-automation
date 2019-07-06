@@ -2,6 +2,7 @@
     <div>
         <div id="nav">
             <RouterLink to="/example/sprite">sprite精灵图</RouterLink> |
+            <RouterLink to="/example/svgicon">svg icon</RouterLink> |
             <RouterLink to="/example/axios">axios</RouterLink> |
             <RouterLink to="/example/cookie">cookie</RouterLink> |
             <RouterLink to="/example/meta">meta</RouterLink> |
