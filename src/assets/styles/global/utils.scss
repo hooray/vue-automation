@@ -3,7 +3,7 @@
 
 // 文字超出隐藏，默认为单行超出隐藏，可设置多行
 @mixin text-overflow($line: 1) {
-    @if ($line==1) {
+    @if ($line == 1) {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -16,15 +16,42 @@
     }
 }
 
+// 定位居中，默认水平居中，可选择垂直居中，或者水平垂直都居中
+@mixin position-center($type: x) {
+    position: absolute;
+    @if ($type==x) {
+        @extend %position-center-x;
+    }
+    @if ($type==y) {
+        @extend %position-center-y;
+    }
+    @if ($type==xy) {
+        @extend %position-center-x;
+        @extend %position-center-y;
+    }
+}
+%position-center-x {
+    left: 50%;
+    transform: translateX(-50%);
+}
+%position-center-y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 // 文字两端对齐
 %justify-align {
     text-align: justify;
     text-align-last: justify;
 }
 
-// 定位水平居中
-%position-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+// 清除浮动
+%clearfix {
+    zoom: 1;
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
 }
