@@ -20,23 +20,18 @@
 @mixin position-center($type: x) {
     position: absolute;
     @if ($type==x) {
-        @extend %position-center-x;
+        left: 50%;
+        transform: translateX(-50%);
     }
     @if ($type==y) {
-        @extend %position-center-y;
+        top: 50%;
+        transform: translateY(-50%);
     }
     @if ($type==xy) {
-        @extend %position-center-x;
-        @extend %position-center-y;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
-}
-%position-center-x {
-    left: 50%;
-    transform: translateX(-50%);
-}
-%position-center-y {
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 // 文字两端对齐

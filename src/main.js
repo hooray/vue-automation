@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 
+// 全局组件自动注册
+import '@/components/autoRegister'
+
 import { api, axios } from './api'
 Vue.prototype.$api = api
 Vue.prototype.$axios = axios
@@ -16,18 +19,7 @@ Vue.use(cookies)
 import meta from 'vue-meta'
 Vue.use(meta)
 
-/**
- * 全局批量注册组件自定义
- * 如果组件仅在部分页面里使用，不建议放在此处注册
- */
-import SvgIcon from './components/SvgIcon'
-const components = {
-    SvgIcon
-}
-Object.keys(components).forEach(key => {
-    Vue.component(key, components[key])
-})
-
+// 自动加载 svg 图标
 const req = require.context('./assets/icons', false, /\.svg$/)
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 requireAll(req)

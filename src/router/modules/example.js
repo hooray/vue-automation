@@ -1,8 +1,9 @@
+import ExampleLayout from '@/layout/example'
+
 export default {
     path: '/example',
     redirect: '/example/sprite',
-    component: () =>
-        import(/* webpackChunkName: 'example' */ '@/views/example/index.vue'),
+    component: ExampleLayout,
     children: [
         {
             path: 'sprite',
@@ -13,6 +14,11 @@ export default {
             path: 'svgicon',
             component: () =>
                 import(/* webpackChunkName: 'example' */ '@/views/example/svgicon.vue')
+        },
+        {
+            path: 'globalComponent',
+            component: () =>
+                import(/* webpackChunkName: 'example' */ '@/views/example/global.component.vue')
         },
         {
             path: 'axios',

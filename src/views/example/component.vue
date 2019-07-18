@@ -1,11 +1,12 @@
 <template>
     <div>
+        <p>这是一个非全局组件，需要在页面上引用该组件才能使用</p>
         <ExampleList :list="list"></ExampleList>
     </div>
 </template>
 
 <script>
-import ExampleList from '@/components/exampleList'
+import ExampleList from '@/components/ExampleList'
 
 export default {
     components: {
