@@ -11,12 +11,11 @@ import Vue from 'vue'
 
 const componentsContext = require.context('./global', true, /index.(vue|js)$/)
 componentsContext.keys().forEach(component => {
-    // 组件配置信息
-    const componentConfig = componentsContext(component)
-    const ctrl = componentConfig.default || componentConfig
+    // 获取文件中的 default 模块
+    const componentConfig = componentsContext(component).default
     if (/.vue$/.test(component)) {
-        Vue.component(ctrl.name, ctrl)
+        Vue.component(componentConfig.name, componentConfig)
     } else {
-        Vue.prototype[`$${ctrl.name}`] = ctrl
+        Vue.prototype[`$${componentConfig.name}`] = componentConfig
     }
 })

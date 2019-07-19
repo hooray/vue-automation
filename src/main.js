@@ -3,9 +3,6 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 
-// 全局组件自动注册
-import '@/components/autoRegister'
-
 import { api, axios } from './api'
 Vue.prototype.$api = api
 Vue.prototype.$axios = axios
@@ -18,6 +15,9 @@ Vue.use(cookies)
 
 import meta from 'vue-meta'
 Vue.use(meta)
+
+// 全局组件自动注册
+import '@/components/autoRegister'
 
 // 自动加载 svg 图标
 const req = require.context('./assets/icons', false, /\.svg$/)
