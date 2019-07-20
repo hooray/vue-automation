@@ -23,11 +23,33 @@
 
 ## 全局 SCSS
 
+> 全局 scss 通过 [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) 实现
+
 在 `assets/styles` 目录下有个 `global` 文件夹，该文件夹用于存放全局的 .scss 文件，也就是说在这个目录里的文件，无需在页面上引用即可生效并使用。
 
 例子中默认存放了 `utils.scss` 文件，里面有几个 `@mixin` 和 `%` ，你可以尝试在页面中使用它们看看效果。
 
 同样，sprites 生成的 .scss 文件也是默认全局。
+
+## 全局组件
+
+> 全局组件会自动注册，可直接使用。
+
+在 `components` 目录下有个 `global` 文件夹，该文件夹用于存放全局组件，需要注意各个组件按文件夹区分，文件夹名称与组件名无关联。
+
+每个组件的文件夹内至少保留一个文件名为 index 的组件入口，例如 index.vue 。
+
+普通组件必须设置 name 并保证其唯一，自动注册会将组件的 name 设为组件名，可参考 SvgIcon 组件写法。
+
+如果组件是通过 js 进行调用，则确保组件入口文件为 index.js，可参考 ExampleNotice 组件。
+
+## 路由
+
+路由也实现自动注册，但因为有优先级的概念，先定义的会先匹配，所以同一模块下的路由必须放在一个路由配置文件里，具体可参考 `router/modules` 目录下的 `example.js` 。
+
+## Vuex
+
+Vuex 同样实现了自动注册，开发只需关注 `store/modules` 文件夹里的文件即可，同样也按照模块区分文件。
 
 ## IDE（编辑器）
 
