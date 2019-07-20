@@ -5608,10 +5608,10 @@ lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, 
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
 
-lodash@^4.17.11:
-  version "4.17.14"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.14.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
-  integrity sha1-nOSHrmbJYlT+ILWZ8htoFgKAeLo=
+lodash@^4.17.11, lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -9040,9 +9040,9 @@ stylelint-config-standard@^18.2.0:
     stylelint-config-recommended "^2.2.0"
 
 stylelint-scss@^3.4.1:
-  version "3.9.1"
-  resolved "https://registry.npm.taobao.org/stylelint-scss/download/stylelint-scss-3.9.1.tgz#c34a41f2587cce85e0769b025377ece44db13724"
-  integrity sha1-w0pB8lh8zoXgdpsCU3fs5E2xNyQ=
+  version "3.9.2"
+  resolved "https://registry.npm.taobao.org/stylelint-scss/download/stylelint-scss-3.9.2.tgz#5435174a57696ee52eae40146778a4e62f7ed3a3"
+  integrity sha1-VDUXSldpbuUurkAUZ3ik5i9+06M=
   dependencies:
     lodash "^4.17.11"
     postcss-media-query-parser "^0.2.3"
