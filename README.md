@@ -9,6 +9,8 @@
 - vue-router
 - vuex
 - axios
+- lodash
+- moment
 - vue-cookies
 - vue-meta
 - node-sass

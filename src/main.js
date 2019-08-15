@@ -7,6 +7,12 @@ import { api, axios } from './api'
 Vue.prototype.$api = api
 Vue.prototype.$axios = axios
 
+import lodash from 'lodash'
+Vue.prototype._ = lodash
+
+import moment from 'moment'
+Vue.prototype.$moment = moment
+
 import util from './util/index'
 Vue.use(util)
 

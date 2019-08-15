@@ -11,6 +11,7 @@
     "dependencies": {
         "axios": "^0.19.0",
         "lodash": "^4.17.15",
+        "moment": "^2.24.0",
         "nprogress": "^0.2.0",
         "vue": "^2.5.17",
         "vue-cookies": "^1.5.7",
