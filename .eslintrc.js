@@ -74,7 +74,6 @@ module.exports = {
         }],
         // Vue - https://github.com/vuejs/eslint-plugin-vue
         'vue/html-indent': [2, 4],
-        'vue/html-self-closing': 0,
         'vue/max-attributes-per-line': 0,
         'vue/require-default-prop': 0,
         'vue/singleline-html-element-content-newline': 0,

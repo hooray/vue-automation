@@ -29,7 +29,7 @@ module.exports = {
                         var parsed = path.parse(fileName)
                         var dir = parsed.dir.split(path.sep)
                         var moduleName = dir[dir.length - 1]
-                        return moduleName + '__' + parsed.name
+                        return moduleName + '_' + parsed.name
                     },
                     cssImageRef: '~example.[hash].png'
                 },
