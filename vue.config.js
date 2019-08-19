@@ -8,33 +8,30 @@ module.exports = {
             modules: ['node_modules', 'assets/sprites']
         },
         plugins: [
+            // 如果有多个目录需要生成多张精灵图，则需要创建多个 SpritesmithPlugin() 实例
             new SpritesmithPlugin({
                 src: {
                     cwd: path.resolve(__dirname, 'src/assets/sprites/example'),
                     glob: '*.png'
                 },
                 target: {
-                    image: path.resolve(
-                        __dirname,
-                        'src/assets/sprites/example.[hash].png'
-                    ),
-                    css: path.resolve(
-                        __dirname,
-                        'src/assets/sprites/_example.scss'
-                    )
+                    image: path.resolve(__dirname, 'src/assets/sprites/example.[hash].png'),
+                    css: [
+                        [path.resolve(__dirname, 'src/assets/sprites/_example.scss'), {
+                            format: 'handlebars_based_template',
+                            spritesheetName: 'example'
+                        }]
+                    ]
                 },
-                // 样式文件中调用雪碧图地址写法
+                customTemplates: {
+                    'handlebars_based_template': path.resolve(__dirname, 'scss.template.handlebars')
+                },
                 apiOptions: {
-                    generateSpriteName: function(fileName) {
-                        var parsed = path.parse(fileName)
-                        var dir = parsed.dir.split(path.sep)
-                        var moduleName = dir[dir.length - 1]
-                        return moduleName + '_' + parsed.name
-                    },
                     cssImageRef: '~example.[hash].png'
                 },
                 spritesmithOptions: {
-                    algorithm: 'binary-tree'
+                    algorithm: 'binary-tree',
+                    padding: 10
                 }
             })
         ]
@@ -46,7 +43,7 @@ module.exports = {
                 .loader('sass-resources-loader')
                 .options({
                     resources: [
-                        './src/assets/styles/global/*.scss',
+                        './src/assets/styles/resources/*.scss',
                         './src/assets/sprites/*.scss'
                     ]
                 })
