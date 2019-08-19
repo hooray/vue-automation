@@ -25,9 +25,9 @@
 
 ## 全局 SCSS 资源
 
-> 全局 scss 通过 [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) 实现
+> 全局 SCSS 资源通过 [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) 实现
 > 
-> 注意！并不是存放全局样式，而是 SCSS 资源，是变量、@mixin 、@function 这些东西
+> 注意！并不是全局样式，而是 SCSS 资源，是变量、@mixin 、@function 这些东西
 
 在 `assets/styles/resources/` 目录下存放全局的 scss 资源，也就是说在这个目录里的文件，无需在页面上引用即可生效并使用。
 
