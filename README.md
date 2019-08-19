@@ -23,21 +23,22 @@
 
 拉取到本地运行后，会看到部分功能演示，同时项目目录里带有 `example` 的目录均为演示代码。
 
-## 全局 SCSS
+## 全局 SCSS 资源
 
 > 全局 scss 通过 [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) 实现
+> 注意！并不是存放全局样式，而是 SCSS 资源，是变量、@mixin 、@function 这些东西
 
-在 `assets/styles` 目录下有个 `global` 文件夹，该文件夹用于存放全局的 .scss 文件，也就是说在这个目录里的文件，无需在页面上引用即可生效并使用。
+在 `assets/styles/resources/` 目录下存放全局的 scss 资源，也就是说在这个目录里的文件，无需在页面上引用即可生效并使用。
 
 例子中默认存放了 `utils.scss` 文件，里面有几个 `@mixin` 和 `%` ，你可以尝试在页面中使用它们看看效果。
 
-同样，sprites 生成的 .scss 文件也是默认全局。
+同样， `assets/sprites/` 目录下生成的 scss 文件也是默认全局。
 
 ## 全局组件
 
 > 全局组件会自动注册，可直接使用。
 
-在 `components` 目录下有个 `global` 文件夹，该文件夹用于存放全局组件，需要注意各个组件按文件夹区分，文件夹名称与组件名无关联。
+在 `components/global/` 目录下存放全局组件，需要注意各个组件按文件夹区分，文件夹名称与组件名无关联。
 
 每个组件的文件夹内至少保留一个文件名为 index 的组件入口，例如 index.vue 。
 
@@ -47,11 +48,11 @@
 
 ## 路由
 
-路由也实现自动注册，但因为有优先级的概念，先定义的会先匹配，所以同一模块下的路由必须放在一个路由配置文件里，具体可参考 `router/modules` 目录下的 `example.js` 。
+路由也实现自动注册，但因为有优先级的概念，先定义的会先匹配，所以同一模块下的路由必须放在一个路由配置文件里，具体可参考 `router/modules/example.js` 文件。
 
 ## Vuex
 
-Vuex 同样实现了自动注册，开发只需关注 `store/modules` 文件夹里的文件即可，同样也按照模块区分文件。
+Vuex 同样实现了自动注册，开发只需关注 `store/modules/` 文件夹里的文件即可，同样也按照模块区分文件。
 
 ## IDE（编辑器）
 
