@@ -2,8 +2,8 @@
 // % 通过 @extend 调用使用
 
 // 文字超出隐藏，默认为单行超出隐藏，可设置多行
-@mixin text-overflow($line: 1, $flex-width: true) {
-    @if ($line==1 and $flex-width==true) {
+@mixin text-overflow($line: 1, $fixed-width: true) {
+    @if ($line==1 and $fixed-width==true) {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
