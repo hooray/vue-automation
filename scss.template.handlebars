@@ -53,10 +53,10 @@ ${{spritesheet_info.strings.name}}-sprites: (
 
 {{#block "spritesheet-functions"}}
 {{#if options.functions}}
-@mixin {{spritesheet_info.strings.name}}-sprites($sprites) {
-    @each $sprite in $sprites {
+@mixin all-{{spritesheet_info.strings.name}}-sprites() {
+    @each $sprite in ${{spritesheet_info.strings.name}}-sprites {
         $sprite-name: nth($sprite, 10);
-        .sprite-#{$sprite-name} {
+        .{{spritesheet_info.strings.name}}-#{$sprite-name}-sprite {
             @include {{spritesheet_info.strings.name}}-sprite($sprite);
         }
     }
