@@ -56,7 +56,7 @@ ${{spritesheet_info.strings.name}}-sprites: (
 @mixin all-{{spritesheet_info.strings.name}}-sprites() {
     @each $key, $val in ${{spritesheet_info.strings.name}}-sprites {
         $sprite-name: nth($val, 10);
-        .{{spritesheet_info.strings.name}}-#{$sprite-name} {
+        .{{spritesheet_info.strings.name}}-#{$sprite-name}-sprites {
             @include {{spritesheet_info.strings.name}}-sprite($key);
         }
     }
