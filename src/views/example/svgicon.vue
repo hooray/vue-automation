@@ -1,8 +1,8 @@
 <template>
     <div>
         <p>这是两个 Svg Icon 图标</p>
-        <svg-icon icon-class="example" class-name="example-icon"></svg-icon>
-        <svg-icon icon-class="example.color" class-name="example-icon"></svg-icon>
+        <svg-icon icon-class="example" class-name="example-icon" />
+        <svg-icon icon-class="example.color" class-name="example-icon" />
         <p>使用方法：</p>
         <ol>
             <li>上 <a href="https://www.iconfont.cn/" target="_blank">Iconfont</a> 下载需要的 svg 图标</li>

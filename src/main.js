@@ -10,8 +10,8 @@ Vue.prototype.$axios = axios
 import lodash from 'lodash'
 Vue.prototype._ = lodash
 
-import moment from 'moment'
-Vue.prototype.$moment = moment
+import dayjs from 'dayjs'
+Vue.prototype.$dayjs = dayjs
 
 import util from './util/index'
 Vue.use(util)
