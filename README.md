@@ -4,13 +4,29 @@
 
 该仓库是为统一 Vue 项目初期配置而设立，方便快速进行业务开发，基于 Vue CLI 3 。
 
+## 使用
+
+### 方法 1
+
+> 适用于初学者快速上手，项目里包含演示文件，方便学习
+
+拉取该项目到本地，安装依赖包后运行即可。
+
+运行后，可以看到功能演示，同时项目目录里带有 `example` 的目录均为演示代码。
+
+### 方法 2
+
+> 适用于熟练使用的老手，项目里无演代码，方便开发工作
+
+使用易网项目手脚架 [1one-project](https://www.npmjs.com/package/1one-project) 进行项目初始化，随后运行即可。
+
 ## 依赖
 
 - vue-router
 - vuex
 - axios
 - lodash
-- moment
+- dayjs
 - vue-cookies
 - vue-meta
 - node-sass
@@ -18,10 +34,6 @@
 - sass-resources-loader
 - svg-sprite-loader
 - webpack-spritesmith
-
-## 例子
-
-拉取到本地运行后，会看到部分功能演示，同时项目目录里带有 `example` 的目录均为演示代码。
 
 ## 全局 SCSS 资源
 
