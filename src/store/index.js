@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import persistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
@@ -11,5 +12,6 @@ require_module.keys().forEach(file_name => {
 
 export default new Vuex.Store({
     modules: modules,
-    strict: process.env.NODE_ENV !== 'production'
+    strict: process.env.NODE_ENV !== 'production',
+    plugins: [persistedState({ storage: window.sessionStorage })]
 })

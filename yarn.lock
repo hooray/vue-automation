@@ -2972,6 +2972,11 @@ deepmerge@^4.0.0:
   resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
   integrity sha1-PjEQyikgXxINfLBklgo5w9IIfAk=
 
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-4.2.2.tgz?cache=0&sync_timestamp=1572279720382&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=
+
 default-gateway@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/default-gateway/download/default-gateway-4.2.0.tgz?cache=0&sync_timestamp=1565763930901&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdefault-gateway%2Fdownload%2Fdefault-gateway-4.2.0.tgz#167104c7500c2115f6dd69b0a536bb8ed720552b"
@@ -3486,10 +3491,10 @@ eslint@^4.19.1:
     table "4.0.2"
     text-table "~0.2.0"
 
-eslint@^6.3.0:
-  version "6.5.0"
-  resolved "https://registry.npm.taobao.org/eslint/download/eslint-6.5.0.tgz#304623eec903969dd5c9f2d61c6ce3d6ecec8750"
-  integrity sha1-MEYj7skDlp3VyfLWHGzj1uzsh1A=
+eslint@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.npm.taobao.org/eslint/download/eslint-6.5.1.tgz#828e4c469697d43bb586144be152198b91e96ed6"
+  integrity sha1-go5MRpaX1Du1hhRL4VIZi5HpbtY=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -5473,10 +5478,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha1-ARRrNqYhjmTljzqNZt5df8b20FE=
 
-known-css-properties@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.npm.taobao.org/known-css-properties/download/known-css-properties-0.15.0.tgz#5aa14a98b5a1652448aad44a1c67e867e4e7d88c"
-  integrity sha1-WqFKmLWhZSRIqtRKHGfoZ+Tn2Iw=
+known-css-properties@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.npm.taobao.org/known-css-properties/download/known-css-properties-0.16.0.tgz#3f0597214db11a460df77cd44bcb39e263b9da6c"
+  integrity sha1-PwWXIU2xGkYN93zUS8s54mO52mw=
 
 launch-editor-middleware@^2.2.1:
   version "2.2.1"
@@ -8548,6 +8553,11 @@ shell-quote@^1.6.1:
   resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.7.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fshell-quote%2Fdownload%2Fshell-quote-1.7.1.tgz#3161d969886fb14f9140c65245a5dd19b6f0b06b"
   integrity sha1-MWHZaYhvsU+RQMZSRaXdGbbwsGs=
 
+shvl@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/shvl/download/shvl-2.0.0.tgz#55fd550b6e81bf7574f2f576b8b5c1ffae74e10f"
+  integrity sha1-Vf1VC26Bv3V08vV2uLXB/6504Q8=
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsignal-exit%2Fdownload%2Fsignal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -9128,10 +9138,10 @@ stylelint-scss@^3.4.1:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.0.2"
 
-stylelint@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.npm.taobao.org/stylelint/download/stylelint-11.0.0.tgz#1458d1e126d4f2fb9f41076197f852aa1fcae91d"
-  integrity sha1-FFjR4SbU8vufQQdhl/hSqh/K6R0=
+stylelint@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.npm.taobao.org/stylelint/download/stylelint-11.1.1.tgz#6dbbb348036576ac6b033ddfedba72a877c1d6bb"
+  integrity sha1-bbuzSANldqxrAz3f7bpyqHfB1rs=
   dependencies:
     autoprefixer "^9.5.1"
     balanced-match "^1.0.0"
@@ -9148,7 +9158,7 @@ stylelint@^11.0.0:
     ignore "^5.0.6"
     import-lazy "^4.0.0"
     imurmurhash "^0.1.4"
-    known-css-properties "^0.15.0"
+    known-css-properties "^0.16.0"
     leven "^3.1.0"
     lodash "^4.17.14"
     log-symbols "^3.0.0"
@@ -10003,10 +10013,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-meta@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.npm.taobao.org/vue-meta/download/vue-meta-2.2.2.tgz#ec6be76d75b7d6e4abb6d995d92245487081428b"
-  integrity sha1-7GvnbXW31uSrttmV2SJFSHCBQos=
+vue-meta@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/vue-meta/download/vue-meta-2.3.1.tgz?cache=0&sync_timestamp=1570643854847&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-meta%2Fdownload%2Fvue-meta-2.3.1.tgz#32a1c2634f49433f30e7e7a028aa5e5743f84f6a"
+  integrity sha1-MqHCY09JQz8w5+egKKpeV0P4T2o=
   dependencies:
     deepmerge "^4.0.0"
 
@@ -10040,6 +10050,14 @@ vue@^2.5.17:
   version "2.6.10"
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
+
+vuex-persistedstate@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.npm.taobao.org/vuex-persistedstate/download/vuex-persistedstate-2.7.0.tgz#f60aae4e1163bf293696a625526dbffaa42e429e"
+  integrity sha1-9gquThFjvyk2lqYlUm2/+qQuQp4=
+  dependencies:
+    deepmerge "^4.2.2"
+    shvl "^2.0.0"
 
 vuex@^3.0.1:
   version "3.1.1"
