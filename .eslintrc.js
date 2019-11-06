@@ -80,6 +80,8 @@ module.exports = {
         'vue/attributes-order': 2,
         'vue/order-in-components': 2,
         'vue/this-in-template': 2,
-        'vue/script-indent': [2, 4]
+        'vue/script-indent': [2, 4, {
+            'switchCase': 1
+        }]
     }
 };
