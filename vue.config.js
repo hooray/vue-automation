@@ -1,5 +1,40 @@
+const fs = require('fs')
 const path = require('path')
-const SpritesmithPlugin = require('webpack-spritesmith')
+const spritesmithPlugin = require('webpack-spritesmith')
+
+const spritesmithTasks = []
+fs.readdirSync('src/assets/sprites').map(dirname => {
+    if (fs.statSync(`src/assets/sprites/${dirname}`).isDirectory()) {
+        spritesmithTasks.push(
+            new spritesmithPlugin({
+                src: {
+                    cwd: path.resolve(__dirname, `src/assets/sprites/${dirname}`),
+                    glob: '*.png'
+                },
+                target: {
+                    image: path.resolve(__dirname, `src/assets/sprites/${dirname}.[hash].png`),
+                    css: [
+                        [path.resolve(__dirname, `src/assets/sprites/_${dirname}.scss`), {
+                            format: 'handlebars_based_template',
+                            spritesheetName: dirname
+                        }]
+                    ]
+                },
+                customTemplates: {
+                    'handlebars_based_template': path.resolve(__dirname, 'scss.template.handlebars')
+                },
+                // 样式文件中调用雪碧图地址写法
+                apiOptions: {
+                    cssImageRef: `~${dirname}.[hash].png`
+                },
+                spritesmithOptions: {
+                    algorithm: 'binary-tree',
+                    padding: 10
+                }
+            })
+        )
+    }
+})
 
 module.exports = {
     publicPath: '',
@@ -8,32 +43,7 @@ module.exports = {
             modules: ['node_modules', 'assets/sprites']
         },
         plugins: [
-            // 如果有多个目录需要生成多张精灵图，则需要创建多个 SpritesmithPlugin() 实例
-            new SpritesmithPlugin({
-                src: {
-                    cwd: path.resolve(__dirname, 'src/assets/sprites/example'),
-                    glob: '*.png'
-                },
-                target: {
-                    image: path.resolve(__dirname, 'src/assets/sprites/example.[hash].png'),
-                    css: [
-                        [path.resolve(__dirname, 'src/assets/sprites/_example.scss'), {
-                            format: 'handlebars_based_template',
-                            spritesheetName: 'example'
-                        }]
-                    ]
-                },
-                customTemplates: {
-                    'handlebars_based_template': path.resolve(__dirname, 'scss.template.handlebars')
-                },
-                apiOptions: {
-                    cssImageRef: '~example.[hash].png'
-                },
-                spritesmithOptions: {
-                    algorithm: 'binary-tree',
-                    padding: 10
-                }
-            })
+            ...spritesmithTasks
         ]
     },
     chainWebpack: config => {
