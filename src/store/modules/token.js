@@ -33,11 +33,11 @@ const actions = {
             resolve()
 
             // api.post('member/login', data).then(res => {
-            // 	commit('setData', res.data);
-            // 	resolve(res);
-            // }).catch((error) => {
-            // 	reject(error);
-            // });
+            //     commit('setData', res.data)
+            //     resolve(res)
+            // }).catch(error => {
+            //     reject(error)
+            // })
         })
     }
 }
