@@ -16,10 +16,18 @@ export default {
             isRouterAlive: true
         }
     },
+    watch: {
+        $route: 'routeChange'
+    },
     methods: {
         reload() {
             this.isRouterAlive = false
             this.$nextTick(() => (this.isRouterAlive = true))
+        },
+        routeChange(newVal, oldVal) {
+            if (newVal.name == oldVal.name) {
+                this.reload()
+            }
         }
     },
     metaInfo: {
