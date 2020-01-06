@@ -1,2 +1,4 @@
 dist/
 node_modules/
+babel.config.js
+vue.config.js

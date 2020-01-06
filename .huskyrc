@@ -1,0 +1,5 @@
+{
+    "hooks": {
+        "pre-commit": "vue-cli-service lint --no-fix && vue-cli-service lint:style --no-fix"
+    }
+}

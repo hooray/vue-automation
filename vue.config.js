@@ -46,6 +46,12 @@ module.exports = {
             ...spritesmithTasks
         ]
     },
+    pluginOptions: {
+        lintStyleOnBuild: true,
+        stylelint: {
+            fix: true
+        }
+    },
     chainWebpack: config => {
         const oneOfsMap = config.module.rule('scss').oneOfs.store
         oneOfsMap.forEach(item => {
