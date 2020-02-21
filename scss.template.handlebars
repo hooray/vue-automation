@@ -47,6 +47,7 @@ ${{spritesheet_info.strings.name}}-sprites: (
     @include {{spritesheet_info.strings.name}}-sprite-size(map-get(${{spritesheet_info.strings.name}}-sprites, #{$name}));
     @include {{spritesheet_info.strings.name}}-sprite-width(map-get(${{spritesheet_info.strings.name}}-sprites, #{$name}));
     @include {{spritesheet_info.strings.name}}-sprite-height(map-get(${{spritesheet_info.strings.name}}-sprites, #{$name}));
+    background-repeat: no-repeat;
 }
 {{/if}}
 {{/block}}
