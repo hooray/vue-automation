@@ -75,6 +75,6 @@ api.interceptors.response.use(
 )
 
 export {
-    axios,
-    api
+    api,
+    axios
 }
