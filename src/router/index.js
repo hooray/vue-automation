@@ -22,6 +22,14 @@ require_module.keys().forEach(file_name => {
     routes.push(require_module(file_name).default)
 })
 
+routes.push({
+    path: '*',
+    component: () => import('@/views/404'),
+    meta: {
+        title: '找不到页面'
+    }
+})
+
 const router = new Router({
     routes: flattenDeep(routes)
 })
