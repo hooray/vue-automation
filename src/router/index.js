@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from '@/store/index'
-import flattenDeep from 'lodash/flattenDeep'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css' // progress bar style
 
@@ -31,7 +30,7 @@ routes.push({
 })
 
 const router = new Router({
-    routes: flattenDeep(routes)
+    routes: routes.flat()
 })
 
 router.beforeEach((to, from, next) => {
