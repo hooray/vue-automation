@@ -929,6 +929,11 @@
     remark "^12.0.0"
     unist-util-find-all-after "^3.0.1"
 
+"@types/anymatch@*":
+  version "1.3.1"
+  resolved "https://registry.npm.taobao.org/@types/anymatch/download/@types/anymatch-1.3.1.tgz?cache=0&sync_timestamp=1588199369403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fanymatch%2Fdownload%2F%40types%2Fanymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
+  integrity sha1-M2utwb7sudrMOL6izzKt9ieoQho=
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/@types/color-name/download/@types/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -947,6 +952,11 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/html-minifier-terser@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/@types/html-minifier-terser/download/@types/html-minifier-terser-5.0.0.tgz?cache=0&sync_timestamp=1588201263220&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fhtml-minifier-terser%2Fdownload%2F%40types%2Fhtml-minifier-terser-5.0.0.tgz#7532440c138605ced1b555935c3115ddd20e8bef"
+  integrity sha1-dTJEDBOGBc7RtVWTXDEV3dIOi+8=
 
 "@types/minimatch@*":
   version "3.0.3"
@@ -978,6 +988,23 @@
   resolved "https://registry.npm.taobao.org/@types/q/download/@types/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha1-aQoUdbhPKohP0HzXl8APXzE1bqg=
 
+"@types/source-list-map@*":
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/@types/source-list-map/download/@types/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
+  integrity sha1-AHiDYGP/rxdBI0m7o2QIfgrALsk=
+
+"@types/tapable@*", "@types/tapable@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/@types/tapable/download/@types/tapable-1.0.5.tgz#9adbc12950582aa65ead76bffdf39fe0c27a3c02"
+  integrity sha1-mtvBKVBYKqZerXa//fOf4MJ6PAI=
+
+"@types/uglify-js@*":
+  version "3.9.0"
+  resolved "https://registry.npm.taobao.org/@types/uglify-js/download/@types/uglify-js-3.9.0.tgz#4490a140ca82aa855ad68093829e7fd6ae94ea87"
+  integrity sha1-RJChQMqCqoVa1oCTgp5/1q6U6oc=
+  dependencies:
+    source-map "^0.6.1"
+
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
   version "2.0.3"
   resolved "https://registry.npm.taobao.org/@types/unist/download/@types/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
@@ -998,6 +1025,27 @@
     "@types/node" "*"
     "@types/unist" "*"
     "@types/vfile-message" "*"
+
+"@types/webpack-sources@*":
+  version "0.1.7"
+  resolved "https://registry.npm.taobao.org/@types/webpack-sources/download/@types/webpack-sources-0.1.7.tgz#0a330a9456113410c74a5d64180af0cbca007141"
+  integrity sha1-CjMKlFYRNBDHSl1kGArwy8oAcUE=
+  dependencies:
+    "@types/node" "*"
+    "@types/source-list-map" "*"
+    source-map "^0.6.1"
+
+"@types/webpack@^4.41.8":
+  version "4.41.12"
+  resolved "https://registry.npm.taobao.org/@types/webpack/download/@types/webpack-4.41.12.tgz?cache=0&sync_timestamp=1588202205378&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fwebpack%2Fdownload%2F%40types%2Fwebpack-4.41.12.tgz#0386ee2a2814368e2f2397abb036c0bf173ff6c3"
+  integrity sha1-A4buKigUNo4vI5ersDbAvxc/9sM=
+  dependencies:
+    "@types/anymatch" "*"
+    "@types/node" "*"
+    "@types/tapable" "*"
+    "@types/uglify-js" "*"
+    "@types/webpack-sources" "*"
+    source-map "^0.6.0"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -2151,6 +2199,14 @@ camel-case@3.0.x:
     no-case "^2.2.0"
     upper-case "^1.1.1"
 
+camel-case@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/camel-case/download/camel-case-4.1.1.tgz#1fc41c854f00e2f7d0139dfeba1542d6896fe547"
+  integrity sha1-H8QchU8A4vfQE53+uhVC1olv5Uc=
+  dependencies:
+    pascal-case "^3.1.1"
+    tslib "^1.10.0"
+
 camelcase-keys@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/camelcase-keys/download/camelcase-keys-2.1.0.tgz#308beeaffdf28119051efa1d932213c91b8f92e7"
@@ -2352,7 +2408,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-css@4.2.x:
+clean-css@4.2.x, clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.npm.taobao.org/clean-css/download/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
   integrity sha1-UHtd59l7SO5T2ErbAWD/YhY4D3g=
@@ -2559,7 +2615,7 @@ commander@^2.18.0, commander@^2.20.0, commander@~2.20.3:
   resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
 
-commander@^4.0.1:
+commander@^4.0.1, commander@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/commander/download/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha1-n9YCvZNilOnp70aj9NaWQESxgGg=
@@ -3045,9 +3101,9 @@ data-uri-to-buffer@0.0.3:
   integrity sha1-GK6XmmoMqZSwYlhTkW0mYruuCxo=
 
 dayjs@^1.8.22:
-  version "1.8.25"
-  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.8.25.tgz#d09a8696cee7191bc1289e739f96626391b9c73c"
-  integrity sha1-0JqGls7nGRvBKJ5zn5ZiY5G5xzw=
+  version "1.8.26"
+  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.8.26.tgz#c6d62ccdf058ca72a8d14bb93a23501058db9f1e"
+  integrity sha1-xtYszfBYynKo0Uu5OiNQEFjbnx4=
 
 de-indent@^1.0.2:
   version "1.0.2"
@@ -3336,6 +3392,14 @@ domutils@^1.5.1, domutils@^1.7.0:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
+
+dot-case@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npm.taobao.org/dot-case/download/dot-case-3.0.3.tgz#21d3b52efaaba2ea5fda875bb1aa8124521cf4aa"
+  integrity sha1-IdO1Lvqroupf2odbsaqBJFIc9Ko=
+  dependencies:
+    no-case "^3.0.3"
+    tslib "^1.10.0"
 
 dot-prop@^5.2.0:
   version "5.2.0"
@@ -4584,7 +4648,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-he@1.2.x, he@^1.1.0, he@^1.1.1:
+he@1.2.x, he@^1.1.0, he@^1.1.1, he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/he/download/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
@@ -4648,6 +4712,19 @@ html-entities@^1.2.1:
   resolved "https://registry.npm.taobao.org/html-entities/download/html-entities-1.3.1.tgz#fb9a1a4b5b14c5daba82d3e34c6ae4fe701a0e44"
   integrity sha1-+5oaS1sUxdq6gtPjTGrk/nAaDkQ=
 
+html-minifier-terser@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.npm.taobao.org/html-minifier-terser/download/html-minifier-terser-5.1.0.tgz#95d3df037f04835e9d1a09d1767c0e361a7de916"
+  integrity sha1-ldPfA38Eg16dGgnRdnwONhp96RY=
+  dependencies:
+    camel-case "^4.1.1"
+    clean-css "^4.2.3"
+    commander "^4.1.1"
+    he "^1.2.0"
+    param-case "^3.0.3"
+    relateurl "^0.2.7"
+    terser "^4.6.3"
+
 html-minifier@^3.2.3:
   version "3.5.21"
   resolved "https://registry.npm.taobao.org/html-minifier/download/html-minifier-3.5.21.tgz#d0040e054730e354db008463593194015212d20c"
@@ -4682,6 +4759,21 @@ html-webpack-plugin@^3.2.0:
     pretty-error "^2.0.2"
     tapable "^1.0.0"
     toposort "^1.0.0"
+    util.promisify "1.0.0"
+
+html-webpack-plugin@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.npm.taobao.org/html-webpack-plugin/download/html-webpack-plugin-4.2.1.tgz?cache=0&sync_timestamp=1588088702665&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtml-webpack-plugin%2Fdownload%2Fhtml-webpack-plugin-4.2.1.tgz#2a8b421ad19eb622397394f34ad6975a14bf0fac"
+  integrity sha1-KotCGtGetiI5c5TzStaXWhS/D6w=
+  dependencies:
+    "@types/html-minifier-terser" "^5.0.0"
+    "@types/tapable" "^1.0.5"
+    "@types/webpack" "^4.41.8"
+    html-minifier-terser "^5.0.1"
+    loader-utils "^1.2.3"
+    lodash "^4.17.15"
+    pretty-error "^2.1.1"
+    tapable "^1.1.3"
     util.promisify "1.0.0"
 
 htmlparser2@^3.10.0, htmlparser2@^3.3.0, htmlparser2@^3.8.3:
@@ -5825,6 +5917,13 @@ lower-case@^1.1.1:
   resolved "https://registry.npm.taobao.org/lower-case/download/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
 
+lower-case@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/lower-case/download/lower-case-2.0.1.tgz#39eeb36e396115cc05e29422eaea9e692c9408c7"
+  integrity sha1-Oe6zbjlhFcwF4pQi6uqeaSyUCMc=
+  dependencies:
+    tslib "^1.10.0"
+
 lru-cache@^4.0.1, lru-cache@^4.1.2:
   version "4.1.5"
   resolved "https://registry.npm.taobao.org/lru-cache/download/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
@@ -6390,6 +6489,14 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+no-case@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npm.taobao.org/no-case/download/no-case-3.0.3.tgz#c21b434c1ffe48b39087e86cfb4d2582e9df18f8"
+  integrity sha1-whtDTB/+SLOQh+hs+00lgunfGPg=
+  dependencies:
+    lower-case "^2.0.1"
+    tslib "^1.10.0"
+
 node-bitmap@0.0.1:
   version "0.0.1"
   resolved "https://registry.npm.taobao.org/node-bitmap/download/node-bitmap-0.0.1.tgz#180eac7003e0c707618ef31368f62f84b2a69091"
@@ -6917,6 +7024,14 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
+param-case@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npm.taobao.org/param-case/download/param-case-3.0.3.tgz#4be41f8399eff621c56eebb829a5e451d9801238"
+  integrity sha1-S+Qfg5nv9iHFbuu4KaXkUdmAEjg=
+  dependencies:
+    dot-case "^3.0.3"
+    tslib "^1.10.0"
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/parent-module/download/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -7008,6 +7123,14 @@ parseurl@~1.3.2, parseurl@~1.3.3:
   version "1.3.3"
   resolved "https://registry.npm.taobao.org/parseurl/download/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
+
+pascal-case@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npm.taobao.org/pascal-case/download/pascal-case-3.1.1.tgz#5ac1975133ed619281e88920973d2cd1f279de5f"
+  integrity sha1-WsGXUTPtYZKB6Ikglz0s0fJ53l8=
+  dependencies:
+    no-case "^3.0.3"
+    tslib "^1.10.0"
 
 pascalcase@^0.1.1:
   version "0.1.1"
@@ -7716,7 +7839,7 @@ prettier@^1.18.2:
   resolved "https://registry.npm.taobao.org/prettier/download/prettier-1.19.1.tgz?cache=0&sync_timestamp=1586174155839&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprettier%2Fdownload%2Fprettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha1-99f1/4qc2HKnvkyhQglZVqYHl8s=
 
-pretty-error@^2.0.2:
+pretty-error@^2.0.2, pretty-error@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/pretty-error/download/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
   integrity sha1-X0+HyPkeWuPzuoerTPXgOxoX8aM=
@@ -8122,7 +8245,7 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-relateurl@0.2.x:
+relateurl@0.2.x, relateurl@^0.2.7:
   version "0.2.7"
   resolved "https://registry.npm.taobao.org/relateurl/download/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
@@ -9594,6 +9717,15 @@ terser@^4.1.2, terser@^4.4.3:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
+terser@^4.6.3:
+  version "4.6.12"
+  resolved "https://registry.npm.taobao.org/terser/download/terser-4.6.12.tgz?cache=0&sync_timestamp=1587902079221&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fterser%2Fdownload%2Fterser-4.6.12.tgz#44b98aef8703fdb09a3491bf79b43faffc5b4fee"
+  integrity sha1-RLmK74cD/bCaNJG/ebQ/r/xbT+4=
+  dependencies:
+    commander "^2.20.0"
+    source-map "~0.6.1"
+    source-map-support "~0.5.12"
+
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npm.taobao.org/text-table/download/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -9771,7 +9903,7 @@ ts-pnp@^1.1.6:
   resolved "https://registry.npm.taobao.org/ts-pnp/download/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
 
-tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.9.0:
   version "1.11.1"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha1-6xXRKIJ/vuKEFUnhcfRe0zisfjU=
