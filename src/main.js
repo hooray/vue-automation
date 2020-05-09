@@ -7,9 +7,6 @@ import { api, axios } from './api'
 Vue.prototype.$api = api
 Vue.prototype.$axios = axios
 
-import lodash from 'lodash'
-Vue.prototype._ = lodash
-
 import dayjs from 'dayjs'
 Vue.prototype.$dayjs = dayjs
 
