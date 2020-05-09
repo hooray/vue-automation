@@ -57,6 +57,7 @@ const externals = {
 
 module.exports = {
     publicPath: '',
+    productionSourceMap: false,
     configureWebpack: config => {
         config.resolve.modules = ['node_modules', 'assets/sprites']
         config.plugins.push(...spritesmithTasks)
