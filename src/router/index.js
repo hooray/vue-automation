@@ -33,6 +33,12 @@ const router = new Router({
     routes: routes.flat()
 })
 
+// 解决路由在跳转时 push 了相同地址报错的问题
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
+}
+
 router.beforeEach((to, from, next) => {
     NProgress.start()
     if (to.meta.requireLogin) {
