@@ -22,14 +22,3 @@
 给个小 ❤️ 吧~
 
 [![star](https://gitee.com/eoner/vue-automation/badge/star.svg?theme=dark)](https://gitee.com/eoner/vue-automation/stargazers)
-
-## 捐助
-
-微信 & 支付宝
-
-<img src="http://eoner.gitee.io/vue-automation/images/reward-wechat.jpg" width="200" height="200" />
-<img src="http://eoner.gitee.io/vue-automation/images/reward-alipay.jpg" width="200" height="200" />
-
-## 交流群
-
-如果我们有群的话~
