@@ -22,3 +22,7 @@
 给个小 ❤️ 吧~
 
 [![star](https://gitee.com/eoner/vue-automation/badge/star.svg?theme=dark)](https://gitee.com/eoner/vue-automation/stargazers)
+
+## 生态
+
+[vue-automation-admin](https://gitee.com/eoner/vue-automation-admin) - 一款开箱即用的 Vue 中后台管理系统模版
