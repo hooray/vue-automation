@@ -21,7 +21,7 @@ fs.readdirSync('src/assets/sprites').map(dirname => {
                     ]
                 },
                 customTemplates: {
-                    'handlebars_based_template': path.resolve(__dirname, 'scss.template.handlebars')
+                    'handlebars_based_template': path.resolve(__dirname, 'scss.template.hbs')
                 },
                 // 样式文件中调用雪碧图地址写法
                 apiOptions: {

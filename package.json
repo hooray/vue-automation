@@ -8,7 +8,8 @@
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
         "stylelint": "vue-cli-service lint:style",
-        "svgo": "svgo -f src/assets/icons"
+        "svgo": "svgo -f src/assets/icons",
+        "new": "plop"
     },
     "dependencies": {
         "axios": "^0.19.2",
@@ -33,6 +34,7 @@
         "husky": "^4.2.3",
         "lint-staged": "^10.2.9",
         "node-sass": "^4.14.1",
+        "plop": "^2.7.1",
         "sass-loader": "^8.0.2",
         "sass-resources-loader": "^2.0.3",
         "stylelint": "^13.6.0",

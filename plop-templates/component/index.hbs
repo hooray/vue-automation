@@ -1,0 +1,28 @@
+<template>
+    <div>
+        {{#if isGlobal}}
+        <!-- 全局组件：<{{ properCase name }} /> -->
+        {{else}}
+        <!-- 组件：<{{ properCase name }} /> -->
+        {{/if}}
+    </div>
+</template>
+
+<script>
+export default {
+    {{#if isGlobal}}
+    name: '{{ properCase name }}',
+    {{/if}}
+    props: {},
+    data() {
+        return {}
+    },
+    created() {},
+    mounted() {},
+    methods: {}
+}
+</script>
+
+<style lang="scss" scoped>
+// scss
+</style>
