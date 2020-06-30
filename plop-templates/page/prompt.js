@@ -38,7 +38,8 @@ module.exports = {
                 path: `src/${path}/${data.name}.vue`,
                 templateFile: 'plop-templates/page/index.hbs',
                 data: {
-                    name: data.name
+                    name: data.name,
+                    isLayout: data.type == 'layout'
                 }
             }
         ]

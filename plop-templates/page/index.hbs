@@ -1,6 +1,11 @@
 <template>
     <div>
+        {{#if isLayout}}
+        <!-- 布局页面：{{ properCase name }} -->
+        <RouterView />
+        {{else}}
         <!-- 页面：{{ properCase name }} -->
+        {{/if}}
     </div>
 </template>
 
