@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const spritesmithPlugin = require('webpack-spritesmith')
+const terserPlugin = require('terser-webpack-plugin')
 
 const spritesmithTasks = []
 fs.readdirSync('src/assets/sprites').map(dirname => {
@@ -71,6 +72,20 @@ module.exports = {
         config.plugins.push(...spritesmithTasks)
         if (isCDN) {
             config.externals = externals
+        }
+        config.optimization = {
+            minimizer: [
+                new terserPlugin({
+                    terserOptions: {
+                        compress: {
+                            warnings: false,
+                            drop_console: true,
+                            drop_debugger: true,
+                            pure_funcs: ['console.log']
+                        }
+                    }
+                })
+            ]
         }
     },
     pluginOptions: {
