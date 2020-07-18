@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const spritesmithPlugin = require('webpack-spritesmith')
 const terserPlugin = require('terser-webpack-plugin')
+const cdnDependencies = require('./dependencies.cdn')
 
 const spritesmithTasks = []
 fs.readdirSync('src/assets/sprites').map(dirname => {
@@ -37,31 +38,15 @@ fs.readdirSync('src/assets/sprites').map(dirname => {
     }
 })
 
+// CDN 相关
 const isCDN = process.env.VUE_APP_CDN == 'ON'
+const externals = {}
+cdnDependencies.forEach(pkg => {
+    externals[pkg.name] = pkg.library
+})
 const cdn = {
-    css: [
-        'https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css'
-    ],
-    js: [
-        'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js',
-        'https://cdn.jsdelivr.net/npm/vue-router@3.1.6/dist/vue-router.min.js',
-        'https://cdn.jsdelivr.net/npm/vuex@3.3.0/dist/vuex.min.js',
-        'https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js',
-        'https://cdn.jsdelivr.net/npm/qs@6.9.3/dist/qs.js',
-        'https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js',
-        'https://cdn.jsdelivr.net/npm/vue-meta@2.4.0/dist/vue-meta.min.js',
-        'https://cdn.jsdelivr.net/npm/dayjs@1.8.28/dayjs.min.js'
-    ]
-}
-const externals = {
-    'vue': 'Vue',
-    'vue-router': 'VueRouter',
-    'vuex': 'Vuex',
-    'axios': 'axios',
-    'qs': 'Qs',
-    'nprogress': 'NProgress',
-    'vue-meta': 'VueMeta',
-    'dayjs': 'dayjs'
+    css: cdnDependencies.map(e => e.css).filter(e => e),
+    js: cdnDependencies.map(e => e.js).filter(e => e)
 }
 
 module.exports = {

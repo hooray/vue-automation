@@ -11,7 +11,7 @@
 export default {
     data() {
         return {
-            cookie: ''
+            cookie: this.$cookies.get('a')
         }
     },
     methods: {
@@ -24,7 +24,7 @@ export default {
             this.cookie = this.$cookies.get('a')
         },
         isSetCookie() {
-            alert(this.$cookies.isKey('a'))
+            alert(!!this.$cookies.get('a'))
         }
     }
 }

@@ -13,8 +13,8 @@ Vue.prototype.$dayjs = dayjs
 import util from './util/index'
 Vue.use(util)
 
-import cookies from 'vue-cookies'
-Vue.use(cookies)
+import Cookies from 'js-cookie'
+Vue.prototype.$cookies = Cookies
 
 import meta from 'vue-meta'
 Vue.use(meta)
