@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ExampleList from '@/components/ExampleList'
+import ExampleList from './components/ExampleList/index'
 
 export default {
     components: {

@@ -5,7 +5,6 @@ module.exports = {
             type: 'input',
             name: 'name',
             message: '请输入模块名称',
-            default: 'index',
             validate: v => {
                 if (!v || v.trim === '') {
                     return '模块名称不能为空'

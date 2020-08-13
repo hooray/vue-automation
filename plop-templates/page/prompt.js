@@ -1,45 +1,56 @@
+const path = require('path')
+const fs = require('fs')
+
+function getFolder(path) {
+    let components = []
+    const files = fs.readdirSync(path)
+    files.forEach(function(item) {
+        let stat = fs.lstatSync(path + '/' + item)
+        if (stat.isDirectory() === true && item != 'components') {
+            components.push(path + '/' + item)
+            components.push.apply(components, getFolder(path + '/' + item))
+        }
+    })
+    return components
+}
+
 module.exports = {
     description: '创建页面',
     prompts: [
         {
             type: 'list',
-            name: 'type',
-            message: '请选择页面类型',
-            choices: ['view', 'layout'],
-            default: 'view'
-        },
-        {
-            type: 'input',
-            name: 'viewPath',
-            message: '请输入页面存放路径(./views/???)',
-            when: answers => {
-                return answers.type == 'view'
-            }
+            name: 'path',
+            message: '请选择页面创建目录',
+            choices: getFolder('src/views')
         },
         {
             type: 'input',
             name: 'name',
-            message: '请输入页面名称',
-            default: 'index',
+            message: '请输入文件名',
             validate: v => {
                 if (!v || v.trim === '') {
-                    return '页面名称不能为空'
+                    return '文件名不能为空'
                 } else {
                     return true
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'cname',
+            message: '请输入页面中文名称',
+            default: '默认页面'
         }
     ],
     actions: data => {
-        const path = data.type == 'view' ? `views/${data.viewPath}` : 'layout'
+        let relativePath = path.relative('src/views', data.path)
         const actions = [
             {
                 type: 'add',
-                path: `src/${path}/${data.name}.vue`,
+                path: `${data.path}/{{dotCase name}}.vue`,
                 templateFile: 'plop-templates/page/index.hbs',
                 data: {
-                    name: data.name,
-                    isLayout: data.type == 'layout'
+                    componentName: `${relativePath} ${data.name}`
                 }
             }
         ]
