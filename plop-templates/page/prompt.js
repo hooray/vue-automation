@@ -34,12 +34,6 @@ module.exports = {
                     return true
                 }
             }
-        },
-        {
-            type: 'input',
-            name: 'cname',
-            message: '请输入页面中文名称',
-            default: '默认页面'
         }
     ],
     actions: data => {
