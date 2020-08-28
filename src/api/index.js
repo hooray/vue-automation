@@ -74,7 +74,4 @@ api.interceptors.response.use(
     }
 )
 
-export {
-    api,
-    axios
-}
+export default api

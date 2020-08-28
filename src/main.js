@@ -3,9 +3,8 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 
-import { api, axios } from './api'
+import api from './api'
 Vue.prototype.$api = api
-Vue.prototype.$axios = axios
 
 import dayjs from 'dayjs'
 Vue.prototype.$dayjs = dayjs

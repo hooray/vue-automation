@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         getInfo() {
-            this.$axios.all([
+            Promise.all([
                 this.$api.get('banner/list', {
                     params: {
                         categoryid: 1
@@ -25,13 +25,11 @@ export default {
                         categoryid: 2
                     }
                 })
-            ]).then(
-                this.$axios.spread((acct, perms) => {
-                    this.banner = acct.data.banner.concat(
-                        perms.data.banner
-                    )
-                })
-            )
+            ]).then(res => {
+                this.banner = res[0].data.banner.concat(
+                    res[1].data.banner
+                )
+            })
         }
     }
 }
