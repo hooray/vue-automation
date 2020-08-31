@@ -1,4 +1,4 @@
-# vue-automation
+# 关于 vue-automation
 
 ## 这是什么
 
@@ -12,10 +12,6 @@
 - 全局组件自动注册
 - CDN支持，优化打包体积
 - 轻松实现团队代码规范
-
-## 文档
-
-[在线文档](http://eoner.gitee.io/vue-automation)
 
 ## 支持
 
