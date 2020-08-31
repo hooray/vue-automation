@@ -21,3 +21,11 @@ yarn install
 > 适用于已熟练使用的老手，项目里无演代码，方便快速开展工作
 
 安装并使用 [1one-project](https://www.npmjs.com/package/1one-project) 进行项目初始化。
+
+## 注意事项
+
+值得一提的是，如果安装过程出现 sass 相关的安装错误，请在安装 [mirror-config-china](https://www.npmjs.com/package/mirror-config-china) 后重试。
+
+```bash
+yarn global add mirror-config-china
+```
