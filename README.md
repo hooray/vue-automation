@@ -15,7 +15,9 @@
 
 ## 文档
 
-[在线文档](http://eoner.gitee.io/vue-automation)
+[Github](https://hooray.github.io/vue-automation)
+
+[Gitee](http://eoner.gitee.io/vue-automation)（推荐国内用户访问）
 
 ## 支持
 
