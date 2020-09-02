@@ -29,4 +29,4 @@
 
 ## 生态
 
-[vue-automation-admin](https://gitee.com/eoner/vue-automation-admin) - 一款开箱即用的 Vue 中后台管理系统模版
+[vue-automation-admin](https://hooray.github.io/vue-automation-admin) - 一款开箱即用的 Vue 中后台管理系统模版
