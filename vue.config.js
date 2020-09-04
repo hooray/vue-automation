@@ -52,6 +52,9 @@ const cdn = {
 module.exports = {
     publicPath: '',
     productionSourceMap: false,
+    devServer: {
+        open: true
+    },
     configureWebpack: config => {
         config.resolve.modules = ['node_modules', 'assets/sprites']
         config.plugins.push(...spritesmithTasks)
