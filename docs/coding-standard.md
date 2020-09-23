@@ -35,7 +35,7 @@
 
 配置文件主要有 3 处，分别为 IDE 配置（`.editorconfig`）、ESLint 配置（`.eslintrc.js` 和 `.eslintignore`）、StyleLint 配置（`.stylelintrc` 和 `.stylelintignore`）。
 
-已代码缩进举例，模版默认是以 4 空格为缩进，如果要调整为 2 空格，则分别在 `.editorconfig` 里修改：
+以代码缩进举例，本模版默认是以 4 空格进行缩进，如果要调整为 2 空格，则需要在 `.editorconfig` 里修改：
 
 ```
 indent_size = 2
@@ -65,7 +65,7 @@ indent_size = 2
 "indentation": 2
 ```
 
-修改完毕后，分别执行：
+修改完毕后，再分别执行下面两句命令：
 
 ```bash
 yarn run lint
