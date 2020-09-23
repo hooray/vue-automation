@@ -30,3 +30,48 @@
 > 可通过修改 `.eslintignore` 和 `.stylelintignore` 忽略无需做代码规范的文件，例如在项目中引用了一些第三方的插件或组件，我们就可以将其忽略
 
 如果 `git init` 仓库初始化是在依赖包安装之后执行的，则无法初始化 Git 钩子，建议在 `git init` 之后再执行一遍 `yarn` 或者 `npm i` ，重新安装一遍依赖包。
+
+## 配置代码规范
+
+配置文件主要有 3 处，分别为 IDE 配置（`.editorconfig`）、ESLint 配置（`.eslintrc.js` 和 `.eslintignore`）、StyleLint 配置（`.stylelintrc` 和 `.stylelintignore`）。
+
+已代码缩进举例，模版默认是以 4 空格为缩进，如果要调整为 2 空格，则分别在 `.editorconfig` 里修改：
+
+```
+indent_size = 2
+```
+
+在 `.eslintrc.js` 里修改：
+
+```
+'indent': [2, 2, {
+    'SwitchCase': 1
+}],
+
+...
+
+'vue/html-indent': [2, 2],
+
+...
+
+'vue/script-indent': [2, 2, {
+    'switchCase': 1
+}]
+```
+
+在 `.stylelintrc` 里修改：
+
+```
+"indentation": 2
+```
+
+修改完毕后，分别执行：
+
+```bash
+yarn run lint
+yarn run stylelint
+```
+
+该操作会将代码进行一次格式校验，如果规则支持自动修复，则会将不符合规则的代码自动进行格式化。
+
+以上面的例子，当缩进规则调整后，我们无需手动去每个文件调整，通过命令可以自动应用新的缩进规则。
