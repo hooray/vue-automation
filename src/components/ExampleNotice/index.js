@@ -1,12 +1,11 @@
 import Vue from 'vue'
 
-const constructor = Vue.extend(require('./main.vue').default)
-
-let instance
+const component = require('./main.vue').default
+const constructor = Vue.extend(component)
 
 const exampleNotice = options => {
     options = options || {}
-    instance = new constructor({
+    let instance = new constructor({
         data: options
     })
     instance.vm = instance.$mount()
@@ -15,4 +14,8 @@ const exampleNotice = options => {
     return instance.vm
 }
 
-export default exampleNotice
+export default {
+    install: Vue => {
+        Vue.prototype[`$${component.name}`] = exampleNotice
+    }
+}
