@@ -16,6 +16,6 @@ componentsContext.keys().forEach(file_name => {
     if (/.vue$/.test(file_name)) {
         Vue.component(componentConfig.name, componentConfig)
     } else {
-        Vue.prototype[`$${componentConfig.name}`] = componentConfig
+        Vue.prototype[`$${componentConfig().$options.name}`] = componentConfig
     }
 })

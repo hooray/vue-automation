@@ -16,7 +16,7 @@
 export default {
     methods: {
         showNotice() {
-            this.$exampleNotice({
+            this.$ExampleNotice({
                 content: '我是Notice！'
             })
         }
