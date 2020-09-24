@@ -53,7 +53,14 @@ module.exports = {
     publicPath: '',
     productionSourceMap: false,
     devServer: {
-        open: true
+        open: true,
+        // 开发环境默认开启反向代理，如果不需要请自行注释
+        proxy: {
+            '/': {
+                target: process.env.VUE_APP_API_ROOT,
+                changeOrigin: true
+            }
+        }
     },
     configureWebpack: config => {
         config.resolve.modules = ['node_modules', 'assets/sprites']
