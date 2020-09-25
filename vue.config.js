@@ -123,6 +123,7 @@ module.exports = {
                 if (isCDN) {
                     args[0].cdn = cdn;
                 }
+                args[0].debugTool = process.env.VUE_APP_DEBUG_TOOL
                 return args;
             })
             .end()
