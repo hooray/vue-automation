@@ -119,12 +119,12 @@ module.exports = {
             .end()
         config.plugin('html')
             .tap(args => {
-                args[0].title = process.env.VUE_APP_TITLE;
+                args[0].title = process.env.VUE_APP_TITLE
                 if (isCDN) {
-                    args[0].cdn = cdn;
+                    args[0].cdn = cdn
                 }
                 args[0].debugTool = process.env.VUE_APP_DEBUG_TOOL
-                return args;
+                return args
             })
             .end()
     }

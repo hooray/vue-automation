@@ -16,11 +16,14 @@ const api = axios.create({
     baseURL: process.env.NODE_ENV !== 'development' && process.env.VUE_APP_API_ROOT,
     timeout: 10000,
     responseType: 'json'
-    // withCredentials: true
 })
 
 api.interceptors.request.use(
     request => {
+        /**
+         * 全局拦截请求发送前提交的参数
+         * 以下代码为示例，在登录状态下，分别对 post 和 get 请求加上 token 参数
+         */
         if (request.method == 'post') {
             if (request.data instanceof FormData) {
                 if (store.getters['token/isLogin']) {
@@ -52,22 +55,24 @@ api.interceptors.request.use(
 
 api.interceptors.response.use(
     response => {
-        if (response.data.error != '') {
-            // 如果接口请求时发现 token 失效，则立马跳转到登录页
-            if (response.data.status == 0) {
+        /**
+         * 全局拦截请求发送后返回的数据，如果数据有报错则在这做全局的错误提示
+         * 假设返回数据格式为：{ code: 200, error: '', data: '' }
+         * 规则是当 code 为 200 时表示请求成功，非 200 时的其它值均为请求失败，并且会在 error 里返回失败提示信息
+         * 其中 code 如果为 0 表示接口需要登录或者登录状态失效，需要重新登录
+         * 则代码如下
+         */
+        if (response.data.code !== 200) {
+            if (response.data.code === 0) {
                 toLogin()
-                return false
+            } else {
+                // 这里做错误提示，如果使用了 element ui 则可以使用 Message 进行提示
+                // Message.error(options)
+                return Promise.reject(response.data)
             }
-            // swal({
-            // 	icon: 'error',
-            // 	title: '系统错误',
-            // 	text: response.data.error,
-            // 	timer: 2000,
-            // 	button: false
-            // });
-            return Promise.reject(response.data)
+        } else {
+            return Promise.resolve(response.data)
         }
-        return Promise.resolve(response.data)
     },
     error => {
         return Promise.reject(error)
