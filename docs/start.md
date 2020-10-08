@@ -24,8 +24,12 @@ yarn install
 
 ## 注意事项
 
-值得一提的是，如果安装过程出现 sass 相关的安装错误，请在安装 [mirror-config-china](https://www.npmjs.com/package/mirror-config-china) 后重试。
+~~值得一提的是，如果安装过程出现 sass 相关的安装错误，请在安装 [mirror-config-china](https://www.npmjs.com/package/mirror-config-china) 后重试。~~
 
-```bash
-yarn global add mirror-config-china
-```
+~~```yarn global add mirror-config-china```~~
+
+大部分安装报错都是因为 `node-sass` 依赖导致，尤其是 Windows 用户，它会强制安装 `python2` 和 `Visual Studio` 才能编译成功。
+
+目前本模版已将 `node-sass` 替换为 `sass` ，简化用户安装成本，同时 Sass 官方也已经将 `dart-sass` 作为未来主要的的开发方向了。
+
+参考《[Node Sass to Dart Sass](https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/advanced/sass.html)》

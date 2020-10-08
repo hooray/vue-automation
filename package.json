@@ -14,12 +14,12 @@
     "dependencies": {
         "axios": "^0.20.0",
         "core-js": "^3.6.4",
-        "dayjs": "^1.8.35",
+        "dayjs": "^1.9.1",
         "js-cookie": "^2.2.1",
         "nprogress": "^0.2.0",
         "vue": "^2.6.12",
         "vue-meta": "^2.4.0",
-        "vue-router": "^3.4.3",
+        "vue-router": "^3.4.6",
         "vuex": "^3.5.1"
     },
     "devDependencies": {
@@ -34,8 +34,8 @@
         "html-webpack-plugin": "^4.4.1",
         "husky": "^4.3.0",
         "lint-staged": "^10.3.0",
-        "node-sass": "^4.14.1",
         "plop": "^2.7.4",
+        "sass": "^1.27.0",
         "sass-loader": "^10.0.2",
         "sass-resources-loader": "^2.1.0",
         "stylelint": "^13.7.0",
