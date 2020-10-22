@@ -23,4 +23,8 @@
 
 ## 生态
 
-[vue-automation-admin](https://hooray.github.io/vue-automation-admin) - 一款开箱即用的 Vue 中后台管理系统模版
+[![](https://hooray.gitee.io/fantastic-admin/logo.png)](https://hooray.gitee.io/fantastic-admin)
+
+[Fantastic-admin](https://hooray.gitee.io/fantastic-admin)
+
+一款开箱即用的 Vue 中后台管理系统框架

@@ -29,4 +29,8 @@
 
 ## 推广
 
-[Fantastic-admin](https://hooray.gitee.io/fantastic-admin) - 一款开箱即用的 Vue 中后台管理系统框架
+[![](https://hooray.gitee.io/fantastic-admin/logo.png)](https://hooray.gitee.io/fantastic-admin)
+
+[Fantastic-admin](https://hooray.gitee.io/fantastic-admin)
+
+一款开箱即用的 Vue 中后台管理系统框架
