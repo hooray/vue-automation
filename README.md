@@ -7,7 +7,7 @@
 ## 特点
 
 - 默认集成 vue-router 和 vuex
-- 全局 SASS 资源自动引入
+- 全局 SCSS 资源自动引入
 - 精灵图自动生成
 - 全局组件自动注册
 - CDN支持，优化打包体积
@@ -21,7 +21,7 @@
 
 ## 支持
 
-给个小 ❤️ 吧~
+如果觉得模版不错，或者已经在使用了，希望你可以去 **Github** 或者 **Gitee(码云)** 帮我点个 ⭐ ，这将对我是极大的鼓励。
 
 [![star](https://img.shields.io/github/stars/hooray/vue-automation?style=social)](https://github.com/hooray/vue-automation/stargazers)
 
