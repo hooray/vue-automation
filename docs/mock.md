@@ -1,4 +1,4 @@
-# Mock与联调
+# Mock 与联调
 
 框架使用 [Mockjs](https://github.com/nuysoft/Mock) 做为模拟数据生成，mock 数据编写规则请阅读官方文档。
 
