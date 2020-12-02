@@ -26,6 +26,8 @@ const req = require.context('./assets/icons', false, /\.svg$/)
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 requireAll(req)
 
+import './mock'
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -16,8 +16,10 @@
         "core-js": "^3.6.4",
         "dayjs": "^1.9.4",
         "js-cookie": "^2.2.1",
+        "mockjs": "^1.1.0",
         "nprogress": "^0.2.0",
         "vue": "^2.6.12",
+        "vue-cli-plugin-mock": "^1.0.2",
         "vue-meta": "^2.4.0",
         "vue-router": "^3.4.8",
         "vuex": "^3.5.1"

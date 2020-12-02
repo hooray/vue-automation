@@ -1,7 +1,9 @@
 <template>
     <div>
-        <button type="button" @click="getInfo">获取数据</button>
-        <img v-for="(item, index) in banner" :key="index" :src="item.image">
+        <button type="button" @click="getInfo">获取 mock 数据</button>
+        <div>
+            <p v-for="(item, index) in news" :key="index">{{ item.title }}</p>
+        </div>
     </div>
 </template>
 
@@ -9,25 +11,17 @@
 export default {
     data() {
         return {
-            banner: []
+            news: []
         }
     },
     methods: {
         getInfo() {
             Promise.all([
-                this.$api.get('banner/list', {
-                    params: {
-                        categoryid: 1
-                    }
-                }),
-                this.$api.get('banner/list', {
-                    params: {
-                        categoryid: 2
-                    }
-                })
+                this.$api.get('mock/news/list'),
+                this.$api.get('mock/news/list')
             ]).then(res => {
-                this.banner = res[0].data.banner.concat(
-                    res[1].data.banner
+                this.news = res[0].data.list.concat(
+                    res[1].data.list
                 )
             })
         }
