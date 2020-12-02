@@ -10,5 +10,7 @@
 * [快速创建文件](plop)
 * [代码规范](coding-standard.md)
 * 扩展
+  * [Mock与联调](mock.md)
   * [CDN支持](cdn.md)
+  * [GZip支持](gzip.md)
   * [移动端支持](mobile-support.md)

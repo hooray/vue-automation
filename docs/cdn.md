@@ -21,6 +21,26 @@ CDN 配置文件存放在项目根目录下的 `dependencies.cdn.js` 文件里�
 
 其中 `name` 和 `library` 最终会转成 webpack 中 externals 的配置项， `name` 是引入的包名， `library` 是全局变量。
 
+设置好并开启后，原先文件中通过 `import` 进行引入的包，就不需要引入了，代码可以删掉，但是删掉会触发 ESLint 的错误提示，例如：
+
+```js
+// import Vue from 'vue'
+
+import api from './api'
+Vue.prototype.$api = api // 这行代码会提示 'Vue' is not defined.
+```
+
+解决这个问题就需要在 `.eslintrc.js` 文件中对 `globals` 对象增加 `Vue` 的属性。
+
+```js
+globals: {
+	process: true,
+	require: true,
+	module: true,
+	Vue: true
+}
+```
+
 这里需要注意以下两点：
 
 1. 如果只在生产环境开启 CDN 支持，请确保第三方库的 CDN 版本与本地依赖包的版本一致，以免出现开发环境是正常的，但生产环境缺不行的情况，也就是因为版本不同造成的 bug
