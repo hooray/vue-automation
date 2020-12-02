@@ -15,8 +15,8 @@ Vue.use(util)
 import Cookies from 'js-cookie'
 Vue.prototype.$cookies = Cookies
 
-import meta from 'vue-meta'
-Vue.use(meta)
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
 
 // 全局组件自动注册
 import '@/components/autoRegister'

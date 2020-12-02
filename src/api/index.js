@@ -1,5 +1,5 @@
 import axios from 'axios'
-import qs from 'qs'
+// import Qs from 'qs'
 import router from '@/router/index'
 import store from '@/store/index'
 
@@ -38,7 +38,7 @@ api.interceptors.request.use(
                 if (store.getters['token/isLogin']) {
                     request.data.token = store.state.token.token
                 }
-                request.data = qs.stringify(request.data)
+                // request.data = Qs.stringify(request.data)
             }
         } else {
             // 带上 token

@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import store from '@/store/index'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css' // progress bar style
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
 /**
  * 因为路由有优先级的概念，先定义的会先匹配，而自动注册是依据文件名的排序来遍历的
@@ -29,17 +29,17 @@ routes.push({
     }
 })
 
-const router = new Router({
+const router = new VueRouter({
     routes: routes.flat()
 })
 
 // 解决路由在 push/replace 了相同地址报错的问题
-const originalPush = Router.prototype.push
-Router.prototype.push = function push(location) {
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
     return originalPush.call(this, location).catch(err => err)
 }
-const originalReplace = Router.prototype.replace
-Router.prototype.replace = function replace(location) {
+const originalReplace = VueRouter.prototype.replace
+VueRouter.prototype.replace = function replace(location) {
     return originalReplace.call(this, location).catch(err => err)
 }
 
