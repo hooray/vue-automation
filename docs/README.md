@@ -1,8 +1,10 @@
 # 关于 vue-automation
 
+> vue-automation 即将停止维护，欢迎访问 [Fantastic-template](https://gitee.com/hooray/fantastic-template) ，这一款开箱即用的 Vue3 项目模版，基于 Vite2.x
+
 ## 这是什么
 
-一款开箱即用的 Vue 项目模版，基于 Vue CLI
+一款开箱即用的 Vue2 项目模版，基于 Vue CLI
 
 ## 特点
 

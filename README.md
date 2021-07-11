@@ -1,3 +1,5 @@
+# Vue3 项目模版已经发布，[点击访问](https://gitee.com/hooray/fantastic-template)
+
 # vue-automation
 
 ## 这是什么
